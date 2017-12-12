@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hhly.lyygame.presentation.view.widget.RatioRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/select_item_ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ratio_width_percent="0.58">
+
+        <ImageView
+            android:id="@+id/select_item_icon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"/>
+
+</com.hhly.lyygame.presentation.view.widget.RatioRelativeLayout>

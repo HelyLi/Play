@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp">
+
+            <include layout="@layout/layout_game_header"
+                android:id="@+id/banner_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_scrollFlags="scroll|snap"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/containerBackgroundLight"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <info.hoang8f.android.segmented.SegmentedGroup
+                    android:id="@+id/segment_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    app:sc_border_width="1dp"
+                    app:sc_corner_radius="5dp"
+                    app:sc_tint_color="@color/color_e7384a"
+                    app:sc_checked_text_color="@color/color_fff">
+
+                    <RadioButton
+                        android:id="@+id/segment_detail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/lyy_segment_detail_title"
+                        style="@style/Widget.LyyGame.Game.Segment.RadioButton"/>
+
+                    <RadioButton
+                        android:id="@+id/segment_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lyy_segment_activity_title"
+                        style="@style/Widget.LyyGame.Game.Segment.RadioButton"/>
+
+                    <RadioButton
+                        android:id="@+id/segment_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lyy_segment_notification_title"
+                        style="@style/Widget.LyyGame.Game.Segment.RadioButton"/>
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/segment_gift"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="@string/lyy_segment_gift_title"-->
+                        <!--style="@style/Widget.LyyGame.Game.Segment.RadioButton"/>-->
+
+                </info.hoang8f.android.segmented.SegmentedGroup>
+
+            </LinearLayout>
+
+            <include layout="@layout/widget_divide"/>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!--<com.hhly.lyygame.presentation.view.widget.FFragmentTabHost
+                android:id="@+id/tab_host"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+
+            </com.hhly.lyygame.presentation.view.widget.FFragmentTabHost>-->
+
+            <com.hhly.lyygame.presentation.view.widget.ExViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+    
+    <include layout="@layout/widget_divide" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="?attr/containerBackgroundLight">
+        
+        <com.hhly.lyygame.presentation.view.widget.DownloadProgressButton
+            android:id="@+id/game_opt_pb"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            style="@style/Widget.LyyGame.Progress.Install.Large"
+            android:layout_gravity="center"
+            app:backgroud_color="@color/colorPrimary"
+            app:backgroud_second_color="#fff"
+            app:backgroud_strokeWidth="1dp"
+            app:radius="5"
+            app:text_color="@color/colorPrimary"
+            app:text_covercolor="#fff"/>
+
+    
+    </LinearLayout>
+
+</LinearLayout>

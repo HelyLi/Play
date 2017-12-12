@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVer
+    buildToolsVersion rootProject.ext.buildToolsVer
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVer
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    compile "com.android.support:support-v4:$rootProject.ext.supportLibVer"
+    testCompile "junit:junit:${rootProject.ext.junitVer}"
+}
+

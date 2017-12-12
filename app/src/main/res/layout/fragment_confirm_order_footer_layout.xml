@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/containerBackgroundLight">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/lyy_delivery_title"
+            style="@style/Theme.LyyGame.Text.Title.Medium"/>
+
+        <TextView
+            android:id="@+id/delivery_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/lyy_delivery_express"
+            style="@style/Theme.LyyGame.Text.Title.Small"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/widget_divide" android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+    <TextView
+        android:id="@+id/order_price_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        style="@style/Theme.LyyGame.Text.Title.Small"/>
+
+    <include layout="@layout/widget_divide"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        style="@style/Theme.LyyGame.Text.Title.Medium"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:maxLines="1"
+        android:text="@string/lyy_game_in_kind_shop_prompt"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:visibility="gone"
+        android:layout_marginTop="12dp">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/order_agreement_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lyy_agree"
+            android:checked="false"
+            style="@style/Widget.LyyGame.Order.CheckBox"/>
+
+        <TextView
+            android:id="@+id/order_agreement_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lyy_exchange_agreement_title"
+            style="@style/Theme.LyyGame.Text.Label.12"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="?attr/containerBackgroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/country_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="24dp"
+            android:text="@string/lyy_account_country_code_china"
+            android:gravity="center"
+            style="@style/Theme.LyyGame.Text.Title.Medium"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/account_register_inset_v"/>
+
+        <EditText
+            android:id="@+id/phone_num_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:maxLength="11"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:hint="@string/lyy_account_hint_phone"
+            android:layout_marginRight="4dp"
+            android:inputType="phone"/>
+
+        <ImageView
+            android:id="@+id/account_clear_iv"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide_with_list_menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/verification_code_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:hint="@string/lyy_account_hint_auth_code"
+            android:layout_marginRight="4dp"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/verification_btn"
+            android:layout_width="90dp"
+            android:layout_height="34dp"
+            android:text="@string/lyy_account_auth_get"
+            android:layout_marginRight="15dp"
+            android:enabled="false"
+            style="@style/Theme.LyyGame.Button.Small.Red"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide_with_list_menu"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/error_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="9dp"
+            android:visibility="gone"
+            android:text="@string/lyy_account_auth_code_error"
+            style="@style/Theme.LyyGame.Text.Error"/>
+    
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/lyy_next"
+        android:gravity="center"
+        android:enabled="false"
+        style="@style/Theme.LyyGame.Button.Large.Red"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/account_agreement_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lyy_account_agreement_prefix"
+            style="@style/Theme.LyyGame.Text.Option.12"/>
+
+        <TextView
+            android:id="@+id/account_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lyy_agreement_with_quotes"
+            style="@style/Theme.LyyGame.Text.Label.12"
+            android:clickable="true"
+            android:paddingBottom="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

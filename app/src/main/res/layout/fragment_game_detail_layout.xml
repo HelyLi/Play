@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/containerBackgroundLight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/lyy_game_intro_title"/>
+
+        <TextView
+            android:id="@+id/game_intro_content_tv"
+            style="@style/Theme.LyyGame.Text.Option.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"/>
+
+        <include
+            layout="@layout/widget_divide"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divide_length"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/lyy_game_pics_title"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

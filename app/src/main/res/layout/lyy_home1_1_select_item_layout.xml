@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/select_item_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/select_item_icon_iv"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="@null"
+            android:layout_gravity="center"
+            android:src="@drawable/bg_home_score_task"/>
+
+        <TextView
+            android:layout_marginTop="7.5dp"
+            android:id="@+id/select_item_icon_tv"
+            android:includeFontPadding="false"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="@color/color_666666"
+            android:text="@string/lyy_home_score_task"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+    android:background="?attr/containerBackground">
+
+    <include layout="@layout/widget_toolbar" />
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:gravity="center"
+        style="@style/Theme.LyyGame.Text.Hint.14"
+        android:text="完成实名认证将获得2000积分奖励"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="?attr/containerBackgroundLight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="9dp"
+            android:text="@string/lyy_real_name"
+            android:gravity="center"
+            style="@style/Theme.LyyGame.Text.Title.Medium"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/account_register_inset_v"/>
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:hint="@string/lyy_real_name_hint"
+            android:layout_marginRight="4dp"
+            android:inputType="text"/>
+
+        <ImageView
+            android:id="@+id/clear_iv"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="?attr/containerBackgroundLight">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="9dp"
+            android:text="@string/lyy_real_id_num"
+            android:gravity="center"
+            style="@style/Theme.LyyGame.Text.Title.Medium"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/account_register_inset_v"/>
+
+        <EditText
+            android:id="@+id/id_num_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="9dp"
+            android:gravity="center_vertical"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:hint="@string/lyy_real_id_num_hint"
+            android:layout_marginRight="4dp"
+            android:maxLength="18"
+            android:inputType="textVisiblePassword"/>
+
+        <ImageView
+            android:id="@+id/id_num_clear_iv"
+            android:visibility="gone"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/error_tip_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="9dp"
+            android:visibility="gone"
+            android:text="@string/lyy_real_auth_id_num_error"
+            style="@style/Theme.LyyGame.Text.Error"/>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/lyy_commit_auth"
+            android:gravity="center"
+            android:enabled="false"
+            style="@style/Theme.LyyGame.Button.Round.Red"/>
+
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

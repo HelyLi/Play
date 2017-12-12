@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_fff"
+    android:gravity="center_vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lyy_pay_account"
+        android:textColor="@color/color_1c1c1c"
+        android:textSize="@dimen/text_size_14"/>
+
+    <EditText
+        android:id="@+id/value_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:focusableInTouchMode="true"
+        android:gravity="right"
+        android:maxLength="18"
+        android:textColor="@color/color_1c1c1c"
+        android:textColorHint="@color/color_999999"
+        android:textSize="@dimen/text_size_14"/>
+</LinearLayout>

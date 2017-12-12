@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/containerBackgroundLight"
+              android:clickable="true"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:orientation="horizontal">
+
+    <!--<android.support.v7.widget.AppCompatCheckBox-->
+    <!--style="@style/Widget.LyyGame.CheckBox"-->
+    <TextView
+        android:id="@+id/favourite_cb"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_cb_check_selector"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:checked="false"/>
+
+    <include
+        layout="@layout/fragment_exchange_history_item_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_history_item"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:id="@+id/delete_favourite_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_delete"/>
+
+</LinearLayout>

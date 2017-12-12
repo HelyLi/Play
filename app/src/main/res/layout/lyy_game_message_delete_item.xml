@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_gravity="right"
+              android:layout_width="75dp"
+              android:background="@color/color_eb5757"
+              android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/lyy_delete"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+
+</LinearLayout>

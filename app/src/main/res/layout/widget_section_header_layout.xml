@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:background="@color/color_fff"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/section_height">
+
+    <ImageView
+        android:id="@+id/section_iv"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_tab_game"/>
+
+    <TextView
+        android:id="@+id/section_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:maxLines="1"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_gravity="center_vertical"
+        style="@style/Theme.LyyGame.Text.Title.Small"
+        android:text="@string/lyy_section_played"
+        />
+
+    <TextView
+        android:id="@+id/section_more_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        style="@style/Theme.LyyGame.Text.Option.Small"
+        android:text="@string/lyy_section_more"/>
+
+</LinearLayout>

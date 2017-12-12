@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/notification_item_root"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="?attr/containerBackgroundLight"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/notification_item_name_tv"
+            style="@style/Theme.LyyGame.Text.Hint.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/notification_item_status_iv"
+            android:layout_alignParentLeft="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toStartOf="@+id/notification_item_status_iv"
+            android:layout_alignParentStart="@+id/notification_item_status_iv"
+            android:text="双十二献豪礼"/>
+
+        <ImageView
+            android:id="@+id/notification_item_status_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/ic_notification_new"/>
+
+        <TextView
+            android:id="@+id/notification_item_description_tv"
+            style="@style/Theme.LyyGame.Text.Option.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_item_name_tv"
+            android:layout_marginTop="9dp"
+            android:maxLines="1"
+            android:text="特权商店－双十二巨献"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_arrow_right_01"/>
+
+
+</RelativeLayout>

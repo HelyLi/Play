@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/containerBackground"
+              android:orientation="vertical">
+
+    <include layout="@layout/widget_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="?attr/inputParentBackground"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <EditText
+            android:id="@+id/input_et"
+            style="@style/Widget.LyyGame.Info.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:hint="@string/lyy_hint_edit_nickname"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:id="@+id/clear_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+</LinearLayout>

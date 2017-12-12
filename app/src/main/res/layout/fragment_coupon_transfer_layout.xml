@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_f5f5f5"
+              android:orientation="vertical">
+
+    <include layout="@layout/widget_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_fff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/Theme.LyyGame.Transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/lyy_game_transfer_coupon_app"/>
+
+        <TextView
+            android:id="@+id/trans_out_app_click_tv"
+            style="@style/Theme.LyyGame.Transfer.Hint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="9dp"
+            android:drawableRight="@drawable/ic_arrow_right_01"
+            android:gravity="center|end"
+            android:text="@string/lyy_game_transfer_choice_app"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_fff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/Theme.LyyGame.Transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/lyy_game_transfer_coupon_coins_balance"/>
+
+        <TextView
+            android:id="@+id/trans_coins_balance_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="0"
+            android:textColor="@color/color_febb52"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/trans_ratio_tv"
+        style="@style/Theme.LyyGame.Transfer.Hint2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:text="@string/lyy_game_transfer_coupon_ratio"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_fff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/Theme.LyyGame.Transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/lyy_game_transfer_coupon_out_coins"/>
+
+        <EditText
+            android:id="@+id/trans_out_coins_et"
+            style="@style/Theme.LyyGame.Transfer.Hint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center|end"
+            android:hint="请输入"
+            android:numeric="integer"
+            android:inputType="number"
+            android:maxLength="6"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_fff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            style="@style/Theme.LyyGame.Transfer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/lyy_game_transfer_coupon_in_coins"/>
+
+        <TextView
+            android:id="@+id/trans_in_coins_tv"
+            style="@style/Theme.LyyGame.Transfer.Hint"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|end"
+            android:text="0"
+            android:textColor="@color/color_febb52"
+            android:textSize="14dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/trans_min_amount"
+            style="@style/Theme.LyyGame.Transfer.Hint2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/lyy_game_transfer_coupon_min_coins"/>
+
+        <TextView
+            android:id="@+id/trans_tip_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="right|end"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12.5dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="@string/lyy_game_transfer_coupon_explain"
+        android:textColor="@color/color_666666"
+        android:visibility="gone"
+        android:textSize="12dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:lineSpacingExtra="7.5dp"
+        android:text="@string/lyy_game_transfer_coupon_explain_details"
+        android:textColor="@color/color_999999"
+        android:visibility="gone"
+        android:textSize="12dp"/>
+
+    <Button
+        android:id="@+id/trans_sure_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="立即兑换"
+        android:enabled="false"
+        android:background="@drawable/button_transfer_selector"
+        android:textColor="@color/color_fff"
+        android:textSize="16dp"/>
+
+</LinearLayout>

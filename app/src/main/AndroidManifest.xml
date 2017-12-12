@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.hhly.lyygame">
+
+    <uses-sdk tools:overrideLibrary="com.miguelbcr.ui.rx_paparazzo.library, io.victoralbertos.rxactivityresult"/>
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+
+    <uses-permission
+        android:name="android.permission.DELETE_PACKAGES"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.LyyGame"
+        tools:replace="android:supportsRtl">
+
+        <activity
+            android:name=".presentation.view.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LyyGame.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".presentation.view.main.MainTabActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|uiMode"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".presentation.view.account.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.gamehall.category.GameCategoryListActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.gamehall.GameHallActivity"
+            android:label="@string/lyy_game_hall"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.info.InfoActivity"
+            android:label="@string/lyy_info_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.info.InfoTextEditActivity"
+            android:label="@string/lyy_edit_nickname"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".presentation.view.account.opt.RegisterOrRetrieveActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateAlwaysVisible"/>
+        <activity
+            android:name=".presentation.view.info.RealAuthActivity"
+            android:label="@string/lyy_info_real_auth"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.address.AddressManagerActivity"
+            android:label="@string/lyy_address_manager_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.address.AddressEditActivity"
+            android:configChanges="keyboardHidden|screenSize|uiMode|orientation"
+            android:label="@string/lyy_address_edit_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".presentation.view.task.TaskActivity"
+            android:label="@string/lyy_task_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.exchange.ExchangeHistoryActivity"
+            android:label="@string/lyy_buy_history_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.activity.ActivitiesCenterActivity"
+            android:label="@string/lyy_activities_center_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.favourite.FavouriteActivity"
+            android:label="@string/lyy_favourite_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.score.ScoreRecordActivity"
+            android:label="@string/lyy_score_record_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.notification.NotificationActivity"
+            android:label="@string/lyy_notification_center_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.mall.GiftDetailActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.order.OrderActivity"
+            android:label="@string/lyy_order_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.game.GameIntroActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.contact.ContactActivity"
+            android:label="@string/lyy_me_my_contact"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.feedback.FeedbackActivity"
+            android:label="@string/lyy_me_my_feedback"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.search.SearchActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation|uiMode"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.signin.SignInActivity"
+            android:label="@string/lyy_sign_in_title"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.download.DownloadManagerActivity"
+            android:label="@string/lyy_me_download_manager"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.message.MessageListActivity"
+            android:label="@string/lyy_me_my_message"
+            android:screenOrientation="portrait"/>
+        <!--<activity-->
+            <!--android:name=".presentation.view.messages.MessagesActivity"-->
+            <!--android:label="@string/lyy_me_my_message"-->
+            <!--android:screenOrientation="portrait"/>-->
+        <activity
+            android:name=".presentation.view.web.WebLocationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.gameservice.GameServiceActivity"
+            android:label="@string/lyy_service_label"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.paylist.PayListActivity"
+            android:label="@string/lyy_pay_list_label"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.paydetails.PayDetailsActivity"
+            android:label="@string/lyy_pay_list_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.order.PayOrderActivity"
+            android:label="@string/lyy_pay_order_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.order.PayOrderDetailsActivity"
+            android:label="@string/lyy_pay_order_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.order.PayOrderFailActivity"
+            android:label="@string/lyy_pay_order_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:label="@string/lyy_pay_order_label"
+            android:exported="true"
+            android:launchMode="singleTop"/>
+
+        <!--测试环境  start  -->
+        <!--<meta-data-->
+            <!--android:name="environment"-->
+            <!--android:value="test"/>-->
+        <!--测试环境  end  -->
+
+        <!--正式环境  start -->
+        <meta-data
+        android:name="environment"
+        android:value="product"/>
+        <!--正式环境  end -->
+
+        <receiver android:name=".reciver.NetworkConnectChangedReceiver"/>
+
+        <activity
+            android:name=".presentation.view.pay.PayActivity"
+            android:label="@string/lyy_pay_label"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"/>
+
+        <activity
+            android:name=".presentation.view.pay.bankpay.BankCardPayActivity"
+            android:label="@string/lyy_pay_bank_card_way"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.pay.bankpay.VerifyBankCardInfoActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation|uiMode"
+            android:label="@string/lyy_pay_verify_bank_card_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <!--<activity-->
+            <!--android:name=".presentation.view.h5pay.H5PayActivity"-->
+            <!--android:screenOrientation="portrait"-->
+            <!--android:windowSoftInputMode="adjustResize"/>-->
+
+        <activity
+            android:name="com.hhly.lyygame.presentation.view.shareactivity.ShareWebActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+
+        <activity
+            android:name=".presentation.view.info.ResetPwdActivity"
+            android:label="@string/lyy_info_modify_password"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".presentation.view.messagedetail.WebDetailActivity"
+            android:label="@string/lyy_game_message_detail"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.mall.category.MallCategoryListActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.transfer.GameTransferActivity"
+            android:label="@string/lyy_transfer_game_activity_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.transfer.CouponTransferActivity"
+            android:label="@string/lyy_transfer_coupon_activity_label"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".presentation.view.transfer.TransferActivity"
+            android:screenOrientation="portrait"/>
+        <!--手机短信验证-->
+        <activity
+            android:name=".presentation.view.pay.bankpay.SmsValidateActivity"
+            android:label="@string/lyy_game_phone_sms_validate_code"
+            android:screenOrientation="portrait"/>
+        <!--支持的银行卡-->
+        <activity
+            android:name=".presentation.view.pay.bankpay.SupportBankActivity"
+            android:label="@string/lyy_game_bank_support_card"
+            android:screenOrientation="portrait"/>
+        <!--充值过程界面 结果界面-->
+        <activity
+                android:name=".presentation.view.pay.bankpay.PayResultActivity"
+                android:label="@string/lyy_me_recharge"
+                android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <!--支付宝支付需要注册Activity  ======   start  ===========    -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind">
+        </activity>
+        <!--支付宝支付需要注册Activity  ======   end  ===========    -->
+
+        <service android:name=".presentation.view.update.VersionUpdateService"/>
+
+        <service
+            android:name=".service.LyyAccessibilityService"
+            android:label="玩一下(推荐开启)"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config"/>
+        </service>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5864b415310c933cfc0018a7">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="4b171e0fad0d3f60382eb2c10497656b">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}">
+        </meta-data>
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="8042304c52"/>
+        <!-- 配置APP版本号 -->
+        <meta-data
+            android:name="BUGLY_APP_VERSION"
+            android:value="1.0.0"/>
+        <!-- 配置Bugly调试模式（true或者false） -->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false"/>
+
+        <!-- 配置RxPaparazzo-->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

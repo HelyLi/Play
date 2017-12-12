@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="?attr/containerBackgroundLight">
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="142dp"
+            android:text="￥2333"/>
+
+        <TextView
+            android:id="@+id/price_tv"
+            style="@style/Theme.LyyGame.Text.Label.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="142dp"
+            android:layout_marginTop="48dp"
+            android:text="￥2333"/>
+
+        <TextView
+            android:id="@+id/original_tv"
+            style="@style/Theme.LyyGame.Text.Option.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/price_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/price_tv"
+            android:text="市场价：200元"/>
+
+        <TextView
+            android:id="@+id/count_description_tv"
+            style="@style/Theme.LyyGame.Text.Hint.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/price_tv"
+            android:layout_below="@id/price_tv"
+            android:layout_marginTop="10dp"
+            android:text="@string/lyy_game_mall_opt_count_description"/>
+
+        <TextView
+            android:id="@+id/count_select_title_tv"
+            style="@style/Theme.LyyGame.Text.Hint.14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="122dp"
+            android:visibility="invisible"
+            android:text="@string/lyy_game_mall_opt_count_select_title"/>
+
+        <LinearLayout
+            android:id="@+id/count_root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_alignLeft="@id/count_select_title_tv"
+            android:layout_below="@id/count_select_title_tv"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/minus_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_f5f5f5"
+                android:src="@drawable/ic_minus_selector"/>
+
+            <EditText
+                android:id="@+id/count_et"
+                style="@style/Theme.LyyGame.Text.Title.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginRight="1.5dp"
+                android:background="@color/color_f5f5f5"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="9"
+                android:maxLines="1"
+                android:minWidth="50dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="1"/>
+
+            <ImageButton
+                android:id="@+id/add_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/color_f5f5f5"
+                android:src="@drawable/ic_add_selector"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/opt_btn"
+            style="@style/Theme.LyyGame.Button.Large.Square"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/count_root"
+            android:layout_marginTop="40dp"
+            android:text="@string/lyy_favourite"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/item_pic_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/bg_mall_opt_pic"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/mall_item_pic_iv"
+            android:layout_width="112dp"
+            android:layout_height="122dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_game_pic_default_02"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

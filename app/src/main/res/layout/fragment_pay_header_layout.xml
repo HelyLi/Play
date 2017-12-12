@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/lyy_pay_account"/>
+
+        <TextView
+            android:id="@+id/pay_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="leyy001"
+            android:textColor="@color/color_b4b4b4"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/lyy_pay_balance"/>
+
+        <TextView
+            android:id="@+id/pay_balance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/icon_pay_coins"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/color_fc9f00"
+            android:textSize="@dimen/text_size_14"/>
+
+    </LinearLayout>
+
+</LinearLayout>

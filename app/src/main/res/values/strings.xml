@@ -1,0 +1,610 @@
+<resources>
+    <string name="app_name">玩一下游戏</string>
+    <string name="lyy_wyx">玩一下</string>
+    <string name="default_progress_tip">正在加载...</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_game">游戏大厅</string>
+    <string name="tab_mall">商城</string>
+    <string name="tab_me">我的</string>
+    <string name="message_center">消息中心</string>
+    <string name="lyy_close">关闭</string>
+    <!--商城-->
+    <string name="lyy_favourite">收藏</string>
+    <string name="lyy_cancel_favourite">取消收藏</string>
+    <string name="lyy_exchange">兑换</string>
+    <string name="lyy_category_all">全部</string>
+    <string name="lyy_category_vir">虚拟物品</string>
+    <string name="lyy_category_mat">手办周边</string>
+    <string name="lyy_ex_history">兑换记录</string>
+
+    <string name="lyy_buy">购买</string>
+
+    <string name="lyy_ex_coupon">乐盈劵兑换</string>
+    <string name="lyy_ex_score">积分兑换</string>
+
+    <string name="lyy_pay_recharge_record">充值明细</string>
+    <string name="lyy_pay_expense_record">消费记录</string>
+    <string name="lyy_pay_coins">乐盈币支付</string>
+    <string name="lyy_pay_deal_success">交易成功</string>
+    <string name="lyy_pay_deal_failure">交易失败</string>
+
+    <!--我的-->
+    <string name="lyy_me_score">积分：</string>
+    <string name="lyy_me_coins">乐盈币：</string>
+    <string name="lyy_me_coupon">乐盈券：</string>
+    <string name="lyy_me_recharge">充值</string>
+    <string name="lyy_me_get_coin_tip">赚积分</string>
+    <string name="lyy_me_my_favourite">我的收藏</string>
+    <string name="lyy_me_my_ex_history">兑换记录</string>
+    <string name="lyy_me_my_message">我的消息</string>
+    <string name="lyy_me_my_address">收货地址</string>
+    <string name="lyy_me_game_transfer_details">游戏划账</string>
+    <string name="lyy_me_coupon_transfer_details">乐盈劵兑换</string>
+    <string name="lyy_me_recharge_details">充值明细</string>
+    <string name="lyy_me_download_manager">下载管理</string>
+    <string name="lyy_me_my_feedback">建议反馈</string>
+    <string name="lyy_me_my_contact">联系我们</string>
+    <string name="lyy_me_my_update">检查更新</string>
+    <string name="lyy_exit_account">退出当前账号</string>
+    <string name="lyy_me_tour">泰国游活动</string>
+
+    <string name="lyy_me_my_buy_history">购买记录</string>
+
+    <!--登录-->
+    <string name="lyy_account_login">登录</string>
+    <string name="lyy_account_hint_account">请输入您的账号</string>
+    <string name="lyy_account_hint_password">请输入密码</string>
+    <string name="lyy_account_hint_password_length">请输入密码</string>
+    <string name="lyy_account_hint_password_error">您输入的密码不一致</string>
+    <string name="lyy_account_reset_password_error">密码长度应至少8位</string>
+    <string name="lyy_account_reset_password_old_pw_error">请输入原密码</string>
+    <string name="lyy_account_reset_password_new_pw_error">请输入新密码</string>
+    <string name="lyy_account_register">注册账号</string>
+    <string name="lyy_account_phone_not_register">该手机未注册</string>
+    <string name="lyy_account_forgot_password">忘记密码？</string>
+    <string name="lyy_login_third_way">其他登录方式</string>
+    <string name="lyy_wechat">微信</string>
+    <string name="lyy_weibo">微博</string>
+    <string name="lyy_qq">QQ</string>
+    <string name="lyy_enter">进入</string>
+    <string name="lyy_account_title_register">注册</string>
+    <string name="lyy_account_title_pwd_retrieve">找回密码</string>
+    <string name="lyy_account_auth_get">获取验证码</string>
+    <string name="lyy_account_auth_re_get">重新获取</string>
+    <string name="lyy_account_auth_cd_format">%1$dS</string>
+    <string name="lyy_account_hint_phone">请输入手机号</string>
+    <string name="lyy_account_hint_auth_code">请输入验证码</string>
+    <string name="lyy_account_agreement_prefix">注册即表示同意</string>
+    <string name="lyy_agreement_with_quotes">《用户协议》</string>
+    <string name="lyy_user_agreement_title">用户协议</string>
+    <string name="lyy_next">下一步</string>
+    <string name="lyy_account_hint_password_again">请再次输入密码</string>
+    <string name="lyy_account_invite_code">请输入邀请码：</string>
+    <string name="lyy_account_hint_invite_code">（非必填）</string>
+    <string name="lyy_account_country_code_china">+86</string>
+
+    <!--首页-->
+    <string name="lyy_game_hall">游戏大厅</string>
+    <string name="lyy_section_played">我玩过的</string>
+    <string name="lyy_section_only">独家游戏</string>
+    <string name="lyy_section_rec">精品推荐</string>
+    <string name="lyy_section_hot">热门游戏</string>
+    <string name="lyy_section_online">网络游戏</string>
+    <string name="lyy_section_offline">单机精品</string>
+    <string name="lyy_section_new">最新游戏</string>
+    <string name="lyy_section_rec_weekly">本周推荐</string>
+    <string name="lyy_section_more"><![CDATA[更多 >]]></string>
+    <string name="lyy_start_game">开始玩</string>
+    <string name="lyy_section_activity">活动专题</string>
+
+    <!--游戏大厅-->
+    <string name="lyy_category_rec">推荐</string>
+    <string name="lyy_category_3d">3D策略</string>
+    <string name="lyy_category_slg">战争策略</string>
+    <string name="lyy_category_casual">休闲竞技</string>
+    <string name="lyy_category_rpg">角度扮演</string>
+    <string name="lyy_category_chess">棋牌</string>
+    <string name="lyy_category_shoot">射击</string>
+
+    <!--独家-->
+    <string name="lyy_home_rec">推荐</string>
+    <string name="lyy_home_only">独家</string>
+    <string name="lyy_home_offline">单机</string>
+    <string name="lyy_home_online">网游</string>
+
+    <!--个人资料-->
+    <string name="lyy_info_title">个人资料</string>
+    <string name="lyy_info_avatar">头像</string>
+    <string name="lyy_info_account">账号</string>
+    <string name="lyy_info_nickname">昵称</string>
+    <string name="lyy_info_gender">性别</string>
+    <string name="lyy_info_real_auth">实名认证</string>
+    <string name="lyy_info_qq">QQ号码</string>
+    <string name="lyy_info_region">所在地区</string>
+    <string name="lyy_info_modify_password">修改密码</string>
+    <string name="lyy_info_address">详细地址</string>
+    <string name="lyy_info_hint_address">请输入详细地址(最多80位)</string>
+    <string name="lyy_info_unauthorized">未认证</string>
+    <string name="lyy_info_authorized">已认证</string>
+    <string name="lyy_select_gender">选择性别</string>
+    <string name="lyy_gender_male">男</string>
+    <string name="lyy_gender_female">女</string>
+    <string name="lyy_gender_secret">保密</string>
+    <string name="lyy_confirm">确定</string>
+    <string name="lyy_camera">拍照</string>
+    <string name="lyy_cancel">取消</string>
+    <string name="lyy_from_album">从手机相册选择</string>
+    <string name="lyy_hint_edit_nickname">请输入您的昵称</string>
+    <string name="lyy_hint_edit_qq">请输入您的QQ</string>
+    <string name="lyy_hint_old_edit_password">请输入原密码</string>
+    <string name="lyy_hint_new_edit_password">请输入新密码</string>
+    <string name="lyy_edit_nickname">修改昵称</string>
+    <string name="lyy_edit_qq">修改QQ</string>
+    <string name="lyy_edit_password">修改密码</string>
+    <string name="lyy_edit_save">保存</string>
+    <string name="lyy_account_auth_code_error">客官，您输入的验证码不对哦～</string>
+    <string name="lyy_real_name">真实姓名</string>
+    <string name="lyy_real_name_hint">请输入您的真实姓名</string>
+    <string name="lyy_real_id_num">身份证号</string>
+    <string name="lyy_real_id_num_hint">请输入您的身份证号</string>
+    <string name="lyy_commit_auth">提交认证</string>
+    <string name="lyy_real_auth_ed">已认证</string>
+    <string name="lyy_real_auth_id_num_error">您输入的身份证号错误</string>
+    <string name="lyy_address_add">新增收货地址</string>
+    <string name="lyy_address_modify">修改收货地址</string>
+    <string name="lyy_address_hint_name">收货人姓名</string>
+    <string name="lyy_address_hint_phone">手机号码</string>
+    <string name="lyy_address_hint_street">省、市、区</string>
+    <string name="lyy_address_hint_detail">详细地址</string>
+    <string name="lyy_address_default_for_save">保存为默认地址</string>
+    <string name="lyy_address_default_for_setting">设置为默认地址</string>
+    <string name="lyy_finish">完成</string>
+    <string name="lyy_address_manager_title">收货地址管理</string>
+    <string name="lyy_address_edit_title">新增收货地址</string>
+    <string name="lyy_delete">删除</string>
+    <string name="lyy_edit">编辑</string>
+
+    <!--任务-->
+    <string name="lyy_task_title">积分任务</string>
+    <string name="lyy_task_title_eg">Integration task</string>
+    <string name="lyy_task_header_title_01">做任务，赚积分，换大礼</string>
+    <string name="lyy_task_action_sign_in">去签到</string>
+    <string name="lyy_task_action_task">做任务</string>
+    <string name="lyy_task_action_score">领积分</string>
+
+    <string name="lyy_load_error">加载失败</string>
+    <string name="lyy_load_network">请检查您的网络重新加载</string>
+    <string name="lyy_load_more">重新加载</string>
+
+    <!--兑换历史-->
+    <string name="lyy_exchange_history_title">兑换历史</string>
+    <string name="lyy_buy_history_title">购买历史</string>
+    <string name="lyy_exchange_empty_tip">亲，您暂时还没有购买记录哦～</string>
+    <!--活动中心-->
+    <string name="lyy_activities_center_title">活动中心</string>
+    <string name="lyy_activities_center_title_eg">Activity center</string>
+    <string name="lyy_select_all">全选</string>
+    <string name="lyy_balance">结算</string>
+
+    <string name="lyy_service_label">开服列表</string>
+    <string name="lyy_service_details">开服详情</string>
+    <string name="lyy_service_details_eg">Service details</string>
+
+    <!--收藏-->
+    <string name="lyy_favourite_title">我的收藏</string>
+    <string name="lyy_favourite_empty_tip">亲，您暂时还没有收藏任何东西哦～</string>
+
+    <!--积分明细-->
+    <string name="lyy_score_record_title">积分明细</string>
+    <string name="lyy_score_record_income">积分收入</string>
+    <string name="lyy_score_record_outgo">积分消耗</string>
+
+    <!--提示中心-->
+    <string name="lyy_notification_center_title">提示中心</string>
+    <string name="lyy_notification_activities">精彩活动</string>
+    <string name="lyy_notification_all">全部消息</string>
+
+    <!--礼包 确认订单-->
+    <string name="lyy_gift_use_description_title">使用说明</string>
+    <string name="lyy_gift_content_title">礼包内容</string>
+    <string name="lyy_exchange_02">直接兑换</string>
+    <string name="lyy_order_address_none">客官，请先添加您的收货地址哦～</string>
+    <string name="lyy_confirm_order">确认</string>
+    <string name="lyy_order_count">共0件 总计：￥0</string>
+    <string name="lyy_order_commodity_count">共0件商品 小计：0</string>
+    <string name="lyy_delivery_title">配送方式：</string>
+    <string name="lyy_delivery_express">快递</string>
+    <string name="lyy_exchange_agreement_title">《玩一下兑换协议》</string>
+    <string name="lyy_agree">同意</string>
+    <string name="lyy_order_title">确认订单</string>
+    <string name="lyy_segment_detail_title">详情</string>
+    <string name="lyy_segment_activity_title">活动</string>
+    <string name="lyy_segment_notification_title">公告</string>
+    <string name="lyy_segment_gift_title">礼包</string>
+    <string name="lyy_game_pics_title">游戏截图</string>
+    <string name="lyy_game_intro_title">游戏简介</string>
+    <string name="lyy_task_score_menu_title">积分明细</string>
+    <string name="lyy_contact_qq">客服QQ: 3541361517</string>
+    <string name="lyy_contact_phone">客服热线: 023-86553188/023-86553588</string>
+    <string name="lyy_feedback_hint">请写下您的问题或者建议，以便我们为您带来更好的产品体验</string>
+    <string name="lyy_feedback_upload_pic_tip">上传照片</string>
+    <string name="lyy_feedback_contact_tip">请输入您的联系方式，以便我们能尽快帮助您解决问题</string>
+    <string name="lyy_feedback_contact_info">客服热线: 023-86553188/023-86553588 客服QQ: 3541361517\n工作时间: 9:00–18:30</string>
+    <string name="lyy_feedback_count_hint_format">%1$d/%2$d</string>
+
+    <string name="lyy_crop">裁剪</string>
+    <string name="lyy_search_hint">请输入您要搜索的游戏</string>
+    <string name="lyy_search_recent_title">最近搜索</string>
+    <string name="lyy_search_recent_clear_all">清空</string>
+    <string name="lyy_search_hot_title">热门搜索</string>
+
+    <string name="lyy_sign_in_title">每日签到</string>
+    <string name="lyy_sign_in_title_eg">Daily attendance</string>
+    <string name="lyy_sign_in_description_title">签到奖励</string>
+    <string name="lyy_sign_in_status_01">签到</string>
+    <string name="lyy_sign_in_status_02">已签到</string>
+
+    <string name="lyy_btn_state_download">下载</string>
+    <string name="lyy_btn_state_start">启动</string>
+    <string name="lyy_btn_state_install">安装</string>
+    <string name="lyy_btn_state_pause">暂停</string>
+    <string name="lyy_btn_state_resume">继续</string>
+    <string name="lyy_btn_state_uninstall">卸载</string>
+    <string name="lyy_title_state_waiting">等待下载</string>
+    <string name="lyy_title_downloading">正在下载</string>
+    <string name="lyy_title_downloaded">已安装</string>
+    <string name="lyy_btn_state_failure">下载失败</string>
+
+    <string name="lyy_exchange_succeed">兑换成功</string>
+    <string name="lyy_exchange_failure">兑换失败</string>
+    <string name="lyy_share_qzone_title">QQ空间</string>
+    <string name="lyy_share_qq_title">QQ</string>
+    <string name="lyy_share_weibo_title">微博</string>
+    <string name="lyy_share_wechat_title">微信</string>
+    <string name="lyy_share_wzone_title">朋友圈</string>
+    <string name="lyy_share_to_title">分享至</string>
+    <string name="lyy_invite_friend_title">邀请好友下载</string>
+    <string name="lyy_not_login_tip">您还没有登录，请登录/注册</string>
+    <string name="lyy_game_label_mobile">手游</string>
+
+    <string name="exit_interval_tip">再按一次返回键退出</string>
+
+    <string name="lyy_connect_server_error">连接服务器出错，请稍候重试</string>
+    <string name="lyy_order_phone_hint">请输入您的手机号码：</string>
+    <string name="lyy_order_phone_hint_02">再次输入您的手机号码：</string>
+
+    <string name="lyy_order_qq_hint">请输入您的QQ账号：</string>
+    <string name="lyy_order_qq_hint_02">再次输入您的QQ账号：</string>
+
+    <string name="lyy_network_notwork">网络不可用，请联网后重试</string>
+    <string name="lyy_network_exception">网络异常</string>
+
+    <string name="lyy_game_name">游戏名称</string>
+    <string name="lyy_game_state">状态</string>
+    <string name="lyy_game_time">时间</string>
+
+    <string name="lyy_game_service_new">最新开服（%1$d）</string>
+    <string name="lyy_game_service_new_hint">最新开服</string>
+    <string name="lyy_game_service_future">开服预告（%1$d）</string>
+    <string name="lyy_game_service_future_hit">开服预告</string>
+    <!--pay-->
+    <string name="lyy_pay_account">账户</string>
+    <string name="lyy_pay_balance">余额</string>
+    <string name="lyy_pay_sure">确认支付</string>
+    <string name="lyy_pay_other_amount">其他整数金额</string>
+    <string name="lyy_pay_amount_hint">每次充值不低于1元</string>
+    <string name="lyy_pay_alipay">支付宝支付</string>
+    <string name="lyy_pay_wechat">微信支付</string>
+    <string name="lyy_pay_unionpay">银联支付</string>
+    <string name="lyy_pay_see_more_pay_way">查看更多支付方式</string>
+    <string name="lyy_pay_bank_card_way">银行卡支付</string>
+    <string name="lyy_pay_order_amount">订单金额：</string>
+    <string name="lyy_pay_user_account">账户：</string>
+    <string name="lyy_pay_bank">付款银行：</string>
+    <string name="lyy_pay_bank_card">银行卡：</string>
+    <string name="lyy_pay_bank_card_number">卡号：</string>
+    <string name="lyy_pay_trading_time">交易时间：</string>
+    <string name="lyy_pay_order_number">订单编号：</string>
+    <string name="lyy_pay_select_bank_card">请选择支持银行卡</string>
+    <string name="lyy_pay_input_bank_card_number">请选择输入卡号</string>
+    <string name="lyy_pay_verify_bank_card_info">验证银行卡信息</string>
+    <string name="lyy_pay_verify_info">验证信息</string>
+    <string name="lyy_pay_expansion_info">展开详细信息</string>
+    <string name="lyy_pay_pack_up_info">收起详细信息</string>
+    <string name="lyy_pay_input_bank_card_number_format">银行卡号格式应为12&#8211;19位数字</string>
+    <string name="lyy_pay_input_bank_card_info_hint">提醒：请输入银行卡绑定信息</string>
+    <string name="lyy_pay_bank_card_owner">持卡人：</string>
+    <string name="lyy_pay_bank_card_owner_name">持卡人姓名</string>
+    <string name="lyy_pay_input_bank_card_owner_name">请输入持卡人姓名</string>
+    <string name="lyy_pay_select_voucher_type">请选择证件类型</string>
+    <string name="lyy_pay_voucher_type">证件类型：</string>
+    <string name="lyy_pay_voucher_num">证件号码：</string>
+    <string name="lyy_pay_validity_time">有效期：</string>
+    <string name="lyy_pay_select_validity_time">选择有效期</string>
+    <string name="lyy_pay_cvn">CVN：</string>
+    <string name="lyy_pay_input_cvn_hint">请输入信用卡背后三位数字</string>
+    <string name="lyy_pay_input_cvn">信用卡背后三位数字</string>
+    <string name="lyy_pay_voucher_num_hint">持卡人证件号码</string>
+    <string name="lyy_pay_input_voucher_num_hint">请输入正确的证件号码</string>
+    <string name="lyy_pay_phone">手机号：</string>
+    <string name="lyy_pay_phone_hint">银行预留手机号</string>
+    <string name="lyy_pay_input_phone_hint">请输入正确的手机号</string>
+    <string name="lyy_pay_agree">同意</string>
+    <string name="lyy_pay_protocol">《玩一下平台支付服务协议》</string>
+    <string name="lyy_pay_hint_message">提示消息</string>
+    <string name="lyy_pay_hint_error_message">填写信息与银行预留信息不一致</string>
+    <string name="lyy_pay_identity_card">身份证</string>
+    <string name="lyy_pay_certificate_of_officers">军官证</string>
+    <string name="lyy_pay_protection">护照</string>
+    <string name="lyy_pay_reentry_permit">回乡证</string>
+    <string name="lyy_pay_tai_wan_card">台胞证</string>
+    <string name="lyy_pay_police_id_card">警官证</string>
+    <string name="lyy_pay_soldiers_card">士兵证</string>
+    <string name="lyy_pay_others_card">其它证件</string>
+    <string name="lyy_pay_name">玩一下游戏充值</string>
+    <string name="lyy_pay_no_more_way">没有更多的支付方式了</string>
+    <string name="lyy_pay_success">充值成功</string>
+    <string name="lyy_pay_sms_send_success">验证码已发送到手机，注意查收</string>
+
+    <string name="lyy_pay_20">20</string>
+    <string name="lyy_pay_50">50</string>
+    <string name="lyy_pay_100">100</string>
+    <string name="lyy_pay_200">200</string>
+    <string name="lyy_pay_300">300</string>
+
+    <string name="pay_choice_recharge_category">选择充值类型</string>
+    <string name="pay_choice_recharge_amount">充值金额</string>
+    <string name="pay_choice_recharge_way">选择充值方式</string>
+    <string name="lyy_pay_label">充值乐盈币</string>
+    <string name="lyy_pay_game">充值到游戏</string>
+    <string name="pay_choice_pay_way">支付方式</string>
+    <string name="lyy_pay">充值</string>
+    <string name="lyy_pay_list_label">充值明细</string>
+    <string name="lyy_pay_order_label">支付</string>
+
+    <string-array name="calendar_weekdays">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string name="lyy_game_room_platform_category">平台分类</string>
+    <string name="lyy_game_room_recently_game">我玩过的</string>
+    <string name="lyy_game_room_common_category">常见分类</string>
+
+    <string name="lyy_game_room_common_00">角色扮演</string>
+    <string name="lyy_game_room_common_01">射击游戏</string>
+    <string name="lyy_game_room_common_02">即时战斗</string>
+    <string name="lyy_game_room_common_03">冒险游戏</string>
+    <string name="lyy_game_room_common_04">策略游戏</string>
+    <string name="lyy_game_room_common_05">战旗游戏</string>
+    <string name="lyy_game_room_common_06">竞速游戏</string>
+    <string name="lyy_game_room_common_07">动作游戏</string>
+    <string name="lyy_game_room_common_08">模拟游戏</string>
+    <string name="lyy_game_room_common_09">养成游戏</string>
+    <string name="lyy_game_room_common_10">飞行游戏</string>
+    <string name="lyy_game_room_common_11">体育游戏</string>
+    <string name="lyy_game_room_common_12">格斗游戏</string>
+    <string name="lyy_game_room_common_13">益智游戏</string>
+    <string name="lyy_game_room_common_14">对战游戏</string>
+    <string name="lyy_game_room_common_15">其他</string>
+
+    <string name="lyy_sign_in_tips">
+        1.每日签到奖励50积分\n2.连续签到奖励：连续签到三天签到奖励20积分；连续7日签到奖励60积分；连续15日签到奖励140积分；连续20日签到奖励200积分；连续30日签到奖励300积分
+    </string>
+    <string name="lyy_sign_in_get_score">您累计已领取%1$d积分</string>
+    <string name="lyy_sign_in_continuous_sign">您已连续签到%1$d天</string>
+
+    <string name="lyy_game_auth_title_tips">您已经完成认证</string>
+    <string name="lyy_game_no_auth_title_tips">完成实名认证将获得200积分奖励</string>
+
+    <string name="lyy_game_message_detail">消息详情</string>
+    <string name="lyy_game_address_edit_hint_address">请输入正确的收货人地址</string>
+    <string name="lyy_game_address_edit_hint_info">请输入正确的收货人信息</string>
+    <string name="lyy_game_address_edit_hint_phone">请输入正确的手机号码</string>
+    <string name="lyy_game_gift_use_desc">1.登录游戏即可领取礼包\n2.每个账户只能领取一次\n3.点击领取后，礼包将直接发送至游戏内，进入游戏即可查收</string>
+
+    <string name="lyy_game_order_price">共%1$d件商品 小计：%2$d积分</string>
+    <!--<string name="lyy_game_order_price_coins">共%1$d件商品 小计：%2$d乐盈币</string>
+    <string name="lyy_game_order_price_coupon">共%1$d件商品 小计：%2$d乐盈券</string>-->
+    <string name="lyy_game_order_price_rmb">共%1$d件商品 小计：%2$d元</string>
+    <string name="lyy_game_order_price_rmb_str">共%1$d件商品 小计：%2$s元</string>
+    <string name="lyy_game_order_card_phone">请检查您所需要充值的手机号码</string>
+    <string name="lyy_game_order_original_price">市场价：%1$d元</string>
+    <string name="lyy_game_order_original_price_str">市场价：%1$s元</string>
+    <string name="lyy_game_order_score">%1$d积分</string>
+    <!--<string name="lyy_game_order_coupon">%1$d乐盈劵</string>
+    <string name="lyy_game_order_coins">%1$d乐盈币</string>-->
+    <string name="lyy_game_order_rmb">%1$d元</string>
+    <string name="lyy_game_order_rmb_str">%1$s元</string>
+    <string name="lyy_game_order_x">x %1$d</string>
+    <string name="lyy_game_order_receiver">收货人：</string>
+    <string name="lyy_game_order_receive_address">收货地址：</string>
+    <string name="lyy_game_order_price_all">共%1$d件 总计：%2$d积分</string>
+    <!--<string name="lyy_game_order_price_all_coupon">共%1$d件 总计：%2$d乐盈劵</string>
+    <string name="lyy_game_order_price_all_coins">共%1$d件 总计：%2$d乐盈币</string>-->
+    <string name="lyy_game_order_price_all_rmb">共%1$d件 总计：%2$d元</string>
+    <string name="lyy_game_order_price_all_rmb_str">共%1$d件 总计：%2$s元</string>
+    <string name="lyy_game_order_address">请填写收货地址</string>
+    <string name="lyy_game_update_positive">马上更新</string>
+    <string name="lyy_game_update_negative">暂时不更新</string>
+
+    <string name="lyy_game">游戏</string>
+    <string name="lyy_third_invite">《玩一下》游戏平台，邀请码:%1$s</string>
+    <string name="lyy_third_share">《玩一下》游戏平台，邀请码:%1$s</string>
+    <string name="lyy_favourite_total_score">合计：%1$d积分</string>
+    <string name="lyy_favourite_total_coupon">合计：%1$d乐盈劵</string>
+    <string name="lyy_favourite_total_coins">合计：%1$d乐盈币</string>
+    <string name="lyy_favourite_total_rmb">合计：%1$d元</string>
+    <string name="lyy_favourite_total">合计：0</string>
+    <string name="lyy_game_count">数量：%1$d</string>
+    <string name="lyy_game_add_store_success">商品收藏成功</string>
+    <string name="lyy_game_add_store_failure">商品收藏失败</string>
+    <string name="lyy_game_del_store_failure">该收藏品删除失败！</string>
+    <string name="lyy_game_exchange_success">商品兑换成功</string>
+    <string name="lyy_game_exchange_failure">商品兑换失败</string>
+    <string name="lyy_game_all_store_type">您收藏的物品中含有不同的类型，不支持全选</string>
+    <string name="lyy_game_add_store_not_same">您选的物品中含有不同类型</string>
+    <string name="lyy_game_exchange_mat_and_vir">您选中的商品中含有虚拟物品与实物</string>
+    <string name="lyy_game_password_rules">输入字符仅为字母、数字；字母允许大小写</string>
+    <string name="lyy_game_password_num">密码为8-14位</string>
+    <string name="lyy_game_password_code_rules">邀请码为8位</string>
+    <string name="lyy_game_network_state">请检查网络连接</string>
+    <string name="lyy_game_account_phone_input_error">您输入的手机号码不正确</string>
+    <string name="lyy_accessibility_service_description">玩一下智能安装,无需用户的任何操作就可以自动安装程序。</string>
+    <string name="lyy_address_empty_tip">请添加收获地址</string>
+    <string name="lyy_game_order_success">购买成功</string>
+    <string name="lyy_game_order_fail">购买失败</string>
+
+    <string name="lyy_search_result_empty">没找到相关游戏</string>
+
+    <string name="lyy_auto_service_install">安装</string>
+    <string name="lyy_auto_service_ensure">确定</string>
+    <string name="lyy_auto_service_next">下一步</string>
+    <string name="lyy_auto_service_exchange">替换</string>
+    <string name="lyy_auto_service_complete">完成</string>
+    <string name="lyy_auto_service_delete">删除</string>
+
+    <string name="lyy_auto_service_install__material_">安装</string>
+    <string name="lyy_auto_service_ensure__material_">确定</string>
+    <string name="lyy_auto_service_next__material_">下一步</string>
+    <string name="lyy_auto_service_exchange__material_">替换</string>
+    <string name="lyy_auto_service_complete__material_">完成</string>
+    <string name="lyy_auto_service_complete__delete_">删除</string>
+
+    <string name="lyy_success">成功</string>
+    <string name="lyy_game_task_count">当前积分：%1$d</string>
+    <string name="lyy_game_address_length">您的收货地址已经超过100位</string>
+
+    <string name="lyy_game_order_card_phone_check">两次输入手机号不一致</string>
+    <string name="lyy_game_order_card_qq_check">两次输入QQ号不一致</string>
+    <string name="lyy_game_order_qq_null">QQ号不能为空</string>
+    <string name="lyy_game_order_qq_less">QQ号不能少于5位</string>
+    <string name="lyy_game_people_played">%1$d人玩过</string>
+
+    <string name="lyy_game_share_failure">分享失败</string>
+    <string name="lyy_game_share_cancel">分享取消</string>
+    <string name="lyy_game_share_success">分享成功</string>
+    <string name="lyy_game_pay_coins_hint">每次充值不低于1元</string>
+
+    <string name="lyy_info_address_edit">您输入的地址过长,最多80位</string>
+    <string name="lyy_game_version">v%1$s版本</string>
+
+    <string name="lyy_game_android_type">安卓</string>
+    <string name="lyy_game_ios_type">IOS</string>
+    <string name="lyy_game_h5_type">H5</string>
+    <string name="lyy_game_pc_type">PC</string>
+
+    <string name="lyy_game_download_title">玩一下提示你</string>
+    <string name="lyy_game_download_content">当前任务将耗费%1$s流量，建议待连接Wi-Fi后零流量下载。</string>
+    <string name="lyy_game_download_negative">土豪继续下载</string>
+    <string name="lyy_game_download_positive">Wi-Fi智能下载</string>
+
+    <string name="lyy_game_mall_opt_count_select_title">数量选择</string>
+    <string name="lyy_game_mall_opt_count_description">库存充足</string>
+
+    <string name="lyy_game_favourite_pay_jf">积分不够</string>
+    <string name="lyy_game_favourite_pay_lyb">乐盈币不足</string>
+    <string name="lyy_game_favourite_pay_lyq">乐盈券不足</string>
+
+    <string name="lyy_game_pay_order_detail_detail">支付详情</string>
+
+    <string name="lyy_game_pay_detail_detail">充值详情</string>
+    <string name="lyy_game_pay_detail_type">充值类型</string>
+    <string name="lyy_game_pay_detail_type_content">充值到乐盈币</string>
+    <string name="lyy_game_pay_detail_count">充值数量</string>
+    <string name="lyy_game_pay_detail_time">交易时间</string>
+    <string name="lyy_game_pay_detail_order">订单号</string>
+    <string name="lyy_game_pay_detail_gold">%d乐盈币</string>
+    <string name="lyy_game_pay_detail_select_gold">请选择充值金额</string>
+
+    <string name="lyy_game_coins_lack">您的乐盈币不足</string>
+    <string name="lyy_game_coupon_lack">您的乐盈劵不足</string>
+    <string name="lyy_game_score_lack">您的积分不足</string>
+
+    <string name="lyy_game_transfer_out_app">划出游戏应用:</string>
+    <string name="lyy_game_transfer_coins_balance">可划出游戏币余额:</string>
+    <string name="lyy_game_transfer_in_app">划入游戏应用:</string>
+    <string name="lyy_game_transfer_choice_app">请选择应用</string>
+    <string name="lyy_game_transfer_ratio">划账比例［%1$d:%2$d］</string>
+    <string name="lyy_game_transfer_out_coins">划出游戏币数额:</string>
+    <string name="lyy_game_transfer_in_coins">划入游戏币数额:</string>
+    <string name="lyy_game_transfer_min_coins">最低划账游戏币数额%1$d</string>
+    <string name="lyy_game_transfer_lack_balance">余额不足，请重新输入</string>
+    <string name="lyy_game_transfer_min_balance">必须大于或等于最低划账数额</string>
+    <string name="lyy_game_transfer_out_app_title">选择划出应用</string>
+    <string name="lyy_game_transfer_in_app_title">选择划入应用</string>
+    <string name="lyy_transfer_game_activity_label">划账</string>
+    <string name="lyy_transfer_coupon_activity_label">兑换乐盈劵</string>
+
+    <string name="lyy_game_transfer_coupon_app">选择兑换游戏:</string>
+    <string name="lyy_game_transfer_coupon_coins_balance">可兑换游戏币余额:</string>
+    <string name="lyy_game_transfer_coupon_ratio">兑换比例［%1$d:%2$d］</string>
+    <string name="lyy_game_transfer_coupon_out_coins">兑换游戏币数额:</string>
+    <string name="lyy_game_transfer_coupon_in_coins">兑换乐盈劵数额:</string>
+    <string name="lyy_game_transfer_coupon_min_coins">最低兑换游戏币数额%1$d</string>
+
+
+    <string name="lyy_game_transfer_coupon_explain">《兑换乐盈劵说明》</string>
+    <string name="lyy_game_transfer_coupon_explain_details">1.您可以选择平台游戏使用游戏币兑换乐盈券 \n2.最低兑换数额根据选择的游戏不同而设定
+        \n3.乐盈券余额可在商城中兑换商品
+    </string>
+
+    <string name="lyy_game_system_message">系统消息</string>
+    <string name="lyy_game_system_message_content">暂无任何系统消息</string>
+    <string name="lyy_game_activity_notice">活动公告</string>
+    <string name="lyy_game_secretary">乐盈盈小秘书</string>
+    <string name="lyy_game_secretary_content">欢迎来到乐盈盈，有任何问题可以向我提问哦！</string>
+
+    <string name="lyy_game_me_exit">是否确认退出当前登录账号？</string>
+    <string name="lyy_game_message_delete">删除此条信息</string>
+
+    <string name="lyy_home_score_task">积分任务</string>
+    <string name="lyy_home_activity_center">活动中心</string>
+    <string name="lyy_home_game_exchange">游戏划账</string>
+    <string name="lyy_home_coupon_exchange">兑换乐盈劵</string>
+
+    <string name="lyy_game_sms_validate_code">短信验证码</string>
+    <string name="lyy_game_phone_sms_validate_code">手机短信验证</string>
+    <string name="lyy_game_phone_sms_validate_phone">请输入%s收到的短信验证码</string>
+
+    <string name="lyy_game_bank_deposit_card">储蓄卡</string>
+    <string name="lyy_game_bank_credit_card">信用卡</string>
+    <string name="lyy_game_bank_support_card">支持银行卡</string>
+    <string name="lyy_game_request_error">系统错误</string>
+    <string name="lyy_game_bank_support_card_type">请选择银行卡类型</string>
+    <string name="lyy_game_bank_support_card_num">请输入正确的银行卡号</string>
+    <string name="lyy_game_bank_payment_agreement">服务协议</string>
+
+    <string name="lyy_game_pay_rmb">%1$d元</string>
+    <string name="lyy_game_other_401">您的账号在其他设备已登陆</string>
+    <string name="lyy_game_other_402">您的账号异常地区登陆</string>
+
+    <string name="lyy_game_pay_result_process_tv">正在充值....等待结果返回</string>
+    <string name="lyy_game_pay_result_process_tip">温馨提示 : 结果返回前 , 请不要操作本页面</string>
+    <string name="lyy_game_pay_result_failure">充值失败</string>
+    <string name="lyy_game_pay_result_failure_cause">原因 : %s</string>
+    <string name="lyy_game_pay_result_failure_cause_time">操作超时，请查看充值明细</string>
+    <string name="lyy_game_pay_result_contact_customer">联系客服</string>
+    <string name="lyy_game_pay_result_continue_pay">继续充值</string>
+    <string name="lyy_game_pay_result_success">充值成功</string>
+    <string name="lyy_game_pay_result_account">账户 :</string>
+    <string name="lyy_game_pay_result_order_no">充值订单号 :</string>
+    <string name="lyy_game_pay_result_money">充值金额 :</string>
+    <string name="lyy_game_pay_result_money_num">%s元</string>
+    <string name="lyy_game_pay_result_back_main">返回首页</string>
+    <string name="lyy_game_pay_result_agent_pay">再充一笔</string>
+
+    <string name="lyy_game_pay_result_agent_buy">再买一笔</string>
+
+    <string name="lyy_game_in_kind_shop_prompt">提示: 实物商品提交订单后3天内发货</string>
+    <string name="lyy_game_virtual_shop_prompt">提示: 虚拟物品提交订单后24小时内发货</string>
+
+    <string name="tip_wechat_not_install">未安装微信客户端</string>
+    <string name="tip_alipay_not_install">未安装支付宝客户端</string>
+</resources>

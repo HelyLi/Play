@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/containerBackgroundLight"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/containerBackgroundLight"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/widget_divide"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal"
+            android:paddingRight="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/item_content_title_tv"
+                    style="@style/Theme.LyyGame.Text.Title.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/lyy_gift_content_title"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv"
+                    style="@style/Theme.LyyGame.Text.Hint.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="15dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/item_opt_btn"
+                style="@style/Theme.LyyGame.Button.Small.Red"
+                android:layout_width="72dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:text="@string/lyy_exchange_02"/>
+
+        </LinearLayout>
+
+        <include layout="@layout/widget_divide"/>
+
+        <TextView
+            android:id="@+id/item_use_title_tv"
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/lyy_gift_use_description_title"/>
+
+        <TextView
+            android:id="@+id/item_use_description_tv"
+            style="@style/Theme.LyyGame.Text.Hint.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/lyy_game_gift_use_desc"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

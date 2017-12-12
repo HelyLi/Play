@@ -1,0 +1,3 @@
+include ':app', 'rxdownload2', ':convenientbanner', ':handlers', ':library'
+include ':addressLibrary', ':rxjava'
+include ':calendar'

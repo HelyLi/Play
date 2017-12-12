@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:background="@color/color_f5f5f5"
+                                            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/fragment_pay_header_layout"/>
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Option.12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:includeFontPadding="false"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:text="@string/pay_choice_recharge_category"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <com.hhly.lyygame.presentation.view.widget.RatioLinearLayout
+                    android:id="@+id/ll_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:ratio_width_percent="1.0">
+
+                    <include layout="@layout/lyy_pay_coins_item_layout"/>
+
+                </com.hhly.lyygame.presentation.view.widget.RatioLinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"/>
+
+                <com.hhly.lyygame.presentation.view.widget.RatioLinearLayout
+                    android:id="@+id/ll_50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:ratio_width_percent="1.0">
+
+                    <include layout="@layout/lyy_pay_coins_item_layout"/>
+
+                </com.hhly.lyygame.presentation.view.widget.RatioLinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"/>
+
+                <com.hhly.lyygame.presentation.view.widget.RatioLinearLayout
+                    android:id="@+id/ll_100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:ratio_width_percent="1.0">
+
+                    <include layout="@layout/lyy_pay_coins_item_layout"/>
+
+
+                </com.hhly.lyygame.presentation.view.widget.RatioLinearLayout>
+
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <com.hhly.lyygame.presentation.view.widget.RatioLinearLayout
+                    android:id="@+id/ll_200"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:ratio_width_percent="1.0">
+
+                    <include layout="@layout/lyy_pay_coins_item_layout"/>
+
+                </com.hhly.lyygame.presentation.view.widget.RatioLinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"/>
+
+                <com.hhly.lyygame.presentation.view.widget.RatioLinearLayout
+                    android:id="@+id/ll_300"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:ratio_width_percent="1.0">
+
+                    <include layout="@layout/lyy_pay_coins_item_layout"/>
+
+                </com.hhly.lyygame.presentation.view.widget.RatioLinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"/>
+
+                <com.hhly.lyygame.presentation.view.widget.RatioLinearLayout
+                    android:id="@+id/ll_custom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:ratio_width_percent="1.0">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/white">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/money_et"
+                            style="@style/Theme.LyyGame.Record.Score.Small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="其他金额"
+                            android:includeFontPadding="false"/>
+
+                        <TextView
+                            style="@style/Theme.LyyGame.Text.Option.9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/money_et"
+                            android:gravity="center"
+                            android:includeFontPadding="false"
+                            android:text="每次充值不低于1元"/>
+
+                    </RelativeLayout>
+
+                </com.hhly.lyygame.presentation.view.widget.RatioLinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/widget_recycler_view"/>
+
+        <include layout="@layout/fragment_pay_footer_layout"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_activity_item"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground">
+
+    <com.hhly.lyygame.presentation.view.widget.RatioImageView
+        android:id="@+id/activity_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_game_pic_default_02"
+        app:ratio_width_percent="0.5"/>
+
+    <ImageView
+        android:id="@+id/activity_status_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_activity_status_active"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_below="@id/activity_iv"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/activity_name_tv"
+            style="@style/Theme.LyyGame.Text.Title.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:ellipsize="end"
+            android:text="玩一下充值豪礼送不停"/>
+
+        <TextView
+            android:id="@+id/activity_date_tv"
+            style="@style/Theme.LyyGame.Text.Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-11-29"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

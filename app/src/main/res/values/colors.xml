@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="background">#fff7f9f9</color>
+
+    <color name="colorPrimary">@color/color_e7384a</color>
+    <color name="colorPrimaryDark">@color/color_e7384a</color>
+    <color name="colorAccent">@color/color_e7384a</color>
+
+    <color name="color_334455">#334455</color>
+    <color name="color_fff">#fff</color>
+    <color name="color_20fff">#34ffffff</color>
+    <color name="color_ff0000">#ff0000</color>
+    <color name="color_f60808">#f60808</color>
+    <color name="color_7f000000">#7f000000</color>
+    
+    <color name="color_a965f4">#a965f4</color>
+    <color name="color_3c4444">#3c4444</color>
+    <color name="color_232930">#232930</color>
+    
+    <color name="color_e7384a">#e7384a</color>
+    <!--color_e7384a在三星上显示有问题 用color_e7384b代替-->
+    <color name="color_e7384b">#e7384b</color>
+    <color name="color_b4b4b4">#b4b4b4</color>
+    <color name="color_1c1c1c">#1c1c1c</color>
+    <color name="color_5b5b5b">#5b5b5b</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_e9e9e9">#e9e9e9</color>
+    <color name="color_ffb212">#ffb212</color>
+    <color name="color_d1d1d1">#d1d1d1</color>
+    <color name="color_fc9f00">#fc9f00</color>
+
+    <color name="color_ff8f9b">#ff8f9b</color>
+    <color name="color_d21b2e">#d21b2e</color>
+
+    <color name="color_ffa508">#ffa508</color>
+
+    <color name="tab_text_color">@color/color_334455</color>
+
+    <color name="color_fcb951">#fcb951</color>
+    <color name="color_c5a9fe">#c5a9fe</color>
+    <color name="color_fd9149">#fd9149</color>
+    <color name="color_88b3e0">#88b3e0</color>
+    <color name="color_febb52">#febb52</color>
+    <color name="color_7cd056">#7cd056</color>
+    <color name="color_f8716e">#f8716e</color>
+    <color name="color_72d4ed">#72d4ed</color>
+
+    <color name="color_fff000">#fff000</color>
+    <color name="color_fff4f5">#fff4f5</color>
+
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_f39ca5">#f39ca5</color>
+    <color name="color_db3546">#db3546</color>
+    <color name="color_444444">#444444</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_eb5757">#eb5757</color>
+    <color name="color_bbbbbb">#bbbbbb</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_05d30f">#05d30f</color>
+    <color name="color_00e80b">#00e80b</color>
+    <color name="color_ee8600">#ee8600</color>
+
+</resources>

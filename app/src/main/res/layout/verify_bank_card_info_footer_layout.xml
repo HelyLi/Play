@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/protocol_check_box"
+        style="@style/Widget.LyyGame.CheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:checked="true"
+        android:padding="10dp"/>
+
+    <TextView
+        style="@style/Theme.LyyGame.Text.Hint.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lyy_pay_agree"/>
+
+    <TextView
+        android:id="@+id/protocol_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lyy_pay_protocol"
+        android:textColor="@color/color_e7384a"
+        android:textSize="@dimen/sp_14"/>
+</LinearLayout>

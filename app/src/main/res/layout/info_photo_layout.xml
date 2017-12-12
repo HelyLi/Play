@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/camera_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/lyy_camera"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        style="@style/Theme.LyyGame.Text.Title.Large"/>
+
+    <include layout="@layout/widget_divide_inset" />
+
+    <TextView
+        android:id="@+id/album_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/lyy_from_album"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        style="@style/Theme.LyyGame.Text.Title.Large"/>
+
+    <include layout="@layout/widget_divide_inset" />
+
+    <TextView
+        android:id="@+id/cancel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/lyy_cancel"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground"
+        style="@style/Theme.LyyGame.Text.Title.Large"/>
+
+
+
+</LinearLayout>

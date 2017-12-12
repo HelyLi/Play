@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_d21b2e">
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/Theme.LyyGame.Text.Body.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_d21b2e"
+            android:text="@string/lyy_game_pay_result_contact_customer" />
+
+        <Button
+            android:id="@+id/btn_agent"
+            style="@style/Theme.LyyGame.Text.Body.Large"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_d21b2e"
+            android:text="@string/lyy_game_pay_result_agent_buy" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/layout_button"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/widget_toolbar" />
+
+            <ImageView
+                android:id="@+id/detail_state_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:background="@null"
+                android:src="@drawable/icon_pay_result_failure" />
+
+            <TextView
+                android:id="@+id/detail_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="18dp"
+                android:includeFontPadding="false"
+                android:text="@string/lyy_game_order_fail"
+                android:textColor="@color/color_1c1c1c"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

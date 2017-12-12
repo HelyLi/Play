@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:orientation="vertical">
+
+    <com.hhly.lyygame.presentation.view.widget.RatioImageView
+        android:id="@+id/game_item_pic_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_game_pic_default_03"
+        app:ratio_width_percent="0.545454"/>
+
+    <RelativeLayout
+        android:id="@+id/game_item_rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/game_item_name_tv"
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:paddingRight="5dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/game_item_opt_btn"
+            android:text="天天打僵尸"/>
+            <!--android:maxWidth="100dp"-->
+
+        <TextView
+            android:id="@+id/game_item_label_tv"
+            style="@style/Theme.LyyGame.Text.Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_item_name_tv"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_marginTop="9dp"
+            android:maxLines="1"
+            android:text="页游"/>
+
+        <TextView
+            android:id="@+id/game_item_count_tv"
+            style="@style/Theme.LyyGame.Text.Option.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/game_item_label_tv"
+            android:layout_toRightOf="@id/game_item_label_tv"
+            android:drawableLeft="@drawable/ic_game_item_count"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_game_item_count"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="238838人玩过"/>
+
+        <com.hhly.lyygame.presentation.view.widget.DownloadProgressButton
+            android:id="@+id/game_item_opt_btn"
+            style="@style/Widget.LyyGame.Progress.Install.Small"
+            android:layout_width="52dp"
+            android:layout_height="27dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:backgroud_color="@color/colorPrimary"
+            app:backgroud_second_color="#fff"
+            app:backgroud_strokeWidth="1dp"
+            app:radius="5"
+            app:text_color="@color/colorPrimary"
+            app:text_covercolor="#fff"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVer
+    buildToolsVersion rootProject.ext.buildToolsVer
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVer
+        targetSdkVersion rootProject.ext.targetSdkVer
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile "junit:junit:${rootProject.ext.junitVer}"
+    compile "com.google.code.gson:gson:${rootProject.ext.gsonVer}"
+    compile "com.android.support:support-v4:${rootProject.ext.supportLibVer}"
+}

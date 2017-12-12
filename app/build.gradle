@@ -1,0 +1,207 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+
+//打包日期
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVer
+    buildToolsVersion rootProject.ext.buildToolsVer
+    defaultConfig {
+        applicationId "com.hhly.lyygame"
+        minSdkVersion rootProject.ext.minSdkVer
+        targetSdkVersion rootProject.ext.targetSdkVer
+        versionCode 111
+        versionName "1.1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+
+        //签名配置
+        release {
+            storeFile file("lyhy.jks")
+            storePassword "lyhy2017"
+            keyAlias "LYHY"
+            keyPassword "LYHY2017"
+        }
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor' // butterknife
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+
+    lintOptions {
+        quiet true
+        abortOnError false
+        ignoreWarnings true
+        disable 'InvalidPackage'            //Some libraries have issues with this.
+        disable 'OldTargetApi'              //Lint gives this warning but SDK 20 would be Android L Beta.
+        disable 'IconDensities'             //For testing purpose. This is safe to remove.
+        disable 'IconMissingDensityFolder'  //For testing purpose. This is safe to remove.
+    }
+
+    configurations.all {
+
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:3.0.1'
+        resolutionStrategy.force "com.android.support:appcompat-v7:${rootProject.ext.supportLibVer}"
+    }
+
+    greendao {
+        schemaVersion 1
+    }
+
+    //添加渠道配置
+    productFlavors {
+        D00292 {}//乐盈互娱
+        D00293 {}//木蚂蚁
+        D00295 {}//爱奇艺
+        D00296 {}//安卓园
+        D00294 {}//腾讯应用宝
+        D00324 {}//	金立游戏平台-Android
+        D00323 {}//	搞趣网-Android
+        D00322 {}//	开心网开放平台-Android
+        D00321 {}//	拇指玩-Android
+        D00320 {}//	酷安网-Android
+        D00319 {}//	安软市场-Android
+        D00318 {}//	N多网-Android
+        D00317 {}//	人人网-Android
+        D00316 {}//	太平洋-Android
+        D00315 {}//	机锋-Android
+        D00314 {}//	搜狐应用中心-Android
+        D00313 {}//	优亿市场-Android
+        D00312 {}//	联通沃商店-Android
+        D00311 {}//	天翼空间-Android
+        D00310 {}//	乐视应用商店-Android
+        D00309 {}//	小米商店-Android
+        D00308 {}//	91助手--Android
+        D00307 {}//	百度手机助手-Android
+        D00298 {}//	天翼开放平台-Android
+        D00297 {}//	微博开放平台-Android
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                // 输出apk名称为
+                def fileName = "lyhy_${defaultConfig.versionName}_${releaseTime()}_android_${variant.productFlavors[0].name}.apk"
+//                output.outputFile = new File('./channelApk/', fileName)
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //support
+    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVer}"
+    compile "com.android.support:recyclerview-v7:${rootProject.ext.supportLibVer}"
+    compile "com.android.support:cardview-v7:${rootProject.ext.supportLibVer}"
+    compile "com.android.support:design:${rootProject.ext.supportLibVer}"
+    //retrofit2.x
+    compile "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofitVer}"
+    compile "com.squareup.retrofit2:retrofit-adapters:${rootProject.ext.retrofitVer}"
+    compile "com.squareup.retrofit2:retrofit-converters:${rootProject.ext.retrofitVer}"
+    compile "com.squareup.retrofit2:adapter-rxjava2:${rootProject.ext.retrofitVer}"
+    compile "com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofitVer}"
+
+    compile "com.squareup.okhttp3:okhttp:${rootProject.ext.okHttpVer}"
+    compile "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.okHttpVer}"
+
+    //rxJava
+    compile "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxJavaVer}"
+    compile "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxAndroidVer}"
+
+    //rxlifecycle
+    compile "com.trello.rxlifecycle2:rxlifecycle:${rootProject.ext.rxlifecycleVer}"
+    compile "com.trello.rxlifecycle2:rxlifecycle-components:${rootProject.ext.rxlifecycleComponentsVer}"
+
+    compile "com.github.bumptech.glide:glide:${rootProject.ext.glideVer}"
+
+    //gson
+    compile "com.google.code.gson:gson:${rootProject.ext.gsonVer}"
+
+    //rxpermission
+    compile "com.tbruyelle.rxpermissions2:rxpermissions:${rootProject.ext.rxPermissionsVer}@aar"
+    //recyclerViewAdapterHelper
+    compile "com.github.CymChad:BaseRecyclerViewAdapterHelper:${rootProject.ext.baseRecyclerViewHelperVer}"
+
+    //bufferknife
+    compile "com.jakewharton:butterknife:${rootProject.ext.butterKnifeVer}"
+    apt "com.jakewharton:butterknife-compiler:${rootProject.ext.butterKnifeVer}"
+
+    //circle imageview
+    compile "de.hdodenhof:circleimageview:${rootProject.ext.circleImageVer}"
+
+    compile "com.orhanobut:logger:${rootProject.ext.loggerVer}"
+
+    //segment
+    compile "info.hoang8f:android-segmented:${rootProject.ext.segmentVer}"
+
+    //image select and crop
+    compile "com.github.miguelbcr:RxPaparazzo:0.5.2-2.x"
+//    compile "com.github.miguelbcr:RxPaparazzo:${rootProject.ext.paparazzoVer}"
+
+    compile "jp.wasabeef:glide-transformations:${rootProject.ext.transformationsVer}"
+
+    compile "org.greenrobot:greendao:${rootProject.ext.greendaoVer}"
+
+    compile 'com.zhy:flowlayout-lib:1.0.3'
+    //友盟SDK
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //calendar
+    //bugly
+    compile 'com.tencent.bugly:crashreport:latest.release'
+
+    //支付
+//    compile 'com.yeepay.cashierandroid:ypcashierlib:1.0.0'
+
+    compile project(":rxdownload2")
+    compile project(":convenientbanner")
+    compile project(":addressLibrary")
+    compile project(":calendar")
+    compile project(":rxjava");
+    compile project(":handlers")
+    compile project(":library")
+//    compile project(":okhttp3-persistent-cookiejar")
+
+    testCompile "junit:junit:${rootProject.ext.junitVer}"
+    testCompile "org.mockito:mockito-all:${rootProject.ext.mockitoVer}"
+}

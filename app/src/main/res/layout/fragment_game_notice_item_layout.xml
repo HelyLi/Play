@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+    android:background="?attr/containerBackgroundLight">
+
+    <ImageView
+        android:id="@+id/notice_pic_iv"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_mall_pic_default"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/notice_pic_iv"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/notice_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Theme.LyyGame.Notice.Title"/>
+
+        <TextView
+            android:id="@+id/notice_subtitle_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_title_tv"
+            android:layout_marginTop="9dp"
+            style="@style/Theme.LyyGame.Notice.SubTitle"/>
+
+        <TextView
+            android:id="@+id/notice_source_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_subtitle_tv"
+            android:layout_marginTop="17dp"
+            style="@style/Theme.LyyGame.Notice.Hint"/>
+
+        <TextView
+            android:id="@+id/notice_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notice_subtitle_tv"
+            android:layout_marginTop="17dp"
+            android:layout_alignParentRight="true"
+            style="@style/Theme.LyyGame.Notice.Hint"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

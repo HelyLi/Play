@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:orientation="horizontal"
+              android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/item_tv"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:textSize="14dp"
+        android:text="撩妹德州"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_1c1c1c"/>
+
+    <LinearLayout
+        android:id="@+id/item_balance_ll"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="余额"
+            android:textColor="@color/color_b4b4b4"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:id="@+id/item_balance_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4000"
+            android:textSize="12dp"
+            android:textColor="@color/color_e7384a"/>
+
+    </LinearLayout>
+
+</LinearLayout>

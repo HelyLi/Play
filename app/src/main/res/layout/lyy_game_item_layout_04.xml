@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:layout_width="72dp"
+              android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/game_item_pic_iv"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_game_pic_default_01"/>
+
+    <TextView
+        android:id="@+id/game_item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="9dp"
+        style="@style/Theme.LyyGame.Text.Title.Small"
+        android:text="我的世界"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+</LinearLayout>

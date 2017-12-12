@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <include layout="@layout/widget_toolbar"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lyy_pay_order_amount"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                    android:id="@+id/order_amount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+        </RelativeLayout>
+
+        <include layout="@layout/widget_divide"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lyy_pay_user_account"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                    android:id="@+id/account_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/select_bank_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/color_fff"
+                android:padding="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lyy_pay_bank"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+
+            <TextView
+                    android:id="@+id/pay_bank_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="8dp"
+                    android:gravity="right"
+                    android:drawableRight="@drawable/ic_arrow_right_01"
+                    android:hint="@string/lyy_pay_select_bank_card"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+        </RelativeLayout>
+
+        <include layout="@layout/widget_divide"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="15dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/lyy_pay_bank_card_number"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+
+            <EditText
+                    android:id="@+id/card_number_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:hint="@string/lyy_pay_input_bank_card_number"
+                    android:inputType="number"
+                    android:maxLength="19"
+                    android:textColor="@color/color_1c1c1c"
+                    android:textSize="@dimen/text_size_14"/>
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/lyy_pay_input_bank_card_number_format"
+                android:textColor="@color/color_b4b4b4"
+                android:textSize="@dimen/sp_12"/>
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/next_step_btn"
+            style="@style/Theme.LyyGame.Button.Large.Square"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/lyy_next"/>
+</RelativeLayout>

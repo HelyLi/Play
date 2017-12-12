@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="tab_home" type="id"/>
+    <item name="tab_game" type="id"/>
+    <item name="tab_mall" type="id"/>
+    <item name="tab_me" type="id"/>
+
+    <item name="recyclerViewDataKey" type="id"/>
+    <item name="recyclerViewLeftDataKey" type="id"/>
+    <item name="recyclerViewRightDataKey" type="id"/>
+    <item name="item_data_key" type="id" />
+
+</resources>

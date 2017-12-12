@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/containerBackground"
+              android:orientation="vertical">
+
+    <include layout="@layout/widget_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/contact_qq"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_notification_with_top"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_share_qq"/>
+
+        <TextView
+            android:id="@+id/notification_title_tv"
+            style="@style/Theme.LyyGame.Text.Title.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/lyy_contact_qq"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_service"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_notification_with_top"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_contact_service"/>
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Title.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:autoLink="phone"
+            android:gravity="center_vertical"
+            android:text="@string/lyy_contact_phone"
+            android:textColorLink="@color/color_e7384a"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

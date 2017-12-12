@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AddressLibrary</string>
+    <string name="addr_other">其他</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pay_amount_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7.5dp"
+    android:background="@drawable/pay_amount_selector"
+    android:gravity="center"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:textColor="@drawable/text_color_gray_red_selector"
+    android:textSize="@dimen/sp_14">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/fixed_coins_root"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/icon"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_marginTop="6dp"-->
+    <!--android:src="@drawable/ic_pay_coins_20"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/item_coins_tv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/icon"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginBottom="5dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:includeFontPadding="false"-->
+    <!--android:text="200"-->
+    <!--android:textColor="@color/color_ffb212"-->
+    <!--android:textSize="@dimen/text_size_12"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/item_money_tv"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/item_coins_tv"-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_margin="4dp"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:gravity="center"-->
+    <!--android:minHeight="29dp"-->
+    <!--android:text="20"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/text_size_14"/>-->
+
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/any_coins_root"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/money_et"-->
+    <!--style="@style/Theme.LyyGame.Record.Score.Small"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:focusable="false"-->
+    <!--android:hint="其他金额"-->
+    <!--android:includeFontPadding="false"-->
+    <!--android:inputType="number"-->
+    <!--android:maxLength="8"/>-->
+
+    <!--<TextView-->
+    <!--style="@style/Theme.LyyGame.Text.Option.9"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/money_et"-->
+    <!--android:gravity="center"-->
+    <!--android:includeFontPadding="false"-->
+    <!--android:text="@string/lyy_game_pay_coins_hint"/>-->
+
+    <!--</RelativeLayout>-->
+
+</TextView>

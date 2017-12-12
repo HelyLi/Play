@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/gift_exchange_btn"
+        style="@style/Theme.LyyGame.Button.Large.Square"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/lyy_exchange_02"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/containerBackground"
+        android:layout_above="@id/gift_exchange_btn">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.hhly.lyygame.presentation.view.widget.RatioFrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ratio_width_percent="1.0">
+
+                <com.hhly.lyygame.presentation.view.banner.GiftBannerHeader
+                    android:id="@+id/banner_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </com.hhly.lyygame.presentation.view.widget.RatioFrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/containerBackgroundLight"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/mall_item_name_tv"
+                    style="@style/Theme.LyyGame.Gift.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="梦幻西游大礼包"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mall_item_coin_tv"
+                        style="@style/Theme.LyyGame.Gift.Score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3000积分"/>
+
+                    <TextView
+                        android:id="@+id/mall_item_original_tv"
+                        style="@style/Theme.LyyGame.Gift.Price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="27dp"
+                        android:text="市场价：200元"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/widget_divide"/>
+
+
+                <TextView
+                    android:id="@+id/item_content_title_tv"
+                    style="@style/Theme.LyyGame.Text.Title.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/lyy_gift_content_title"/>
+
+                <TextView
+                    android:id="@+id/item_content_tv"
+                    style="@style/Theme.LyyGame.Text.Hint.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="15dp"
+                    android:text="宝石iei *1\n右owow *2"/>
+
+                <include layout="@layout/widget_divide"/>
+
+                <TextView
+                    android:id="@+id/item_use_title_tv"
+                    style="@style/Theme.LyyGame.Text.Title.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/lyy_gift_use_description_title"/>
+
+                <TextView
+                    android:id="@+id/item_use_description_tv"
+                    style="@style/Theme.LyyGame.Text.Hint.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="18dp"
+                    android:layout_marginTop="15dp"
+                    android:text="1.920202002jdkdkaklfjld\n2.llaldldfdjf399393\n3.olslls939392"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageButton
+        android:id="@+id/favourite_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentRight="true"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_favourite_selector"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/marquee_content_tv"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:gravity="center_vertical"
+          style="@style/Theme.LyyGame.Text.Title.Small"
+          android:text="《GTA5》游戏停止工作进不去怎么办？"
+          android:maxLines="1"
+          android:ellipsize="end"/>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="5dp"
+              android:clickable="true"
+              android:foreground="?android:selectableItemBackground"
+    android:background="@drawable/background_with_divide">
+
+    <com.hhly.lyygame.presentation.view.widget.RatioImageView
+        android:id="@+id/mall_item_pic_iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_mall_pic_default"
+        app:ratio_width_percent="1.0"/>
+
+    <TextView
+        android:id="@+id/mall_item_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:maxLines="1"
+        style="@style/Theme.LyyGame.Text.Title.Medium"
+        android:text="梦幻西游欢乐礼包"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mall_item_coin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="200元"
+            style="@style/Theme.LyyGame.Text.Label"/>
+
+        <TextView
+            android:id="@+id/mall_item_original_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:text="市场价：200元"
+            style="@style/Theme.LyyGame.Text.Option.Small"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mall_item_favourite_btn"
+            android:layout_width="76dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/color_fff"
+            android:gravity="center"
+            android:background="@drawable/bg_collection"
+            android:text="@string/lyy_favourite"/>
+
+        <Button
+            android:id="@+id/mall_item_exchange_btn"
+            android:layout_width="76dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            style="@style/Theme.LyyGame.Button.Small.Yellow"
+            android:text="@string/lyy_buy"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

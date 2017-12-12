@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:gravity="center_vertical"
+              android:clickable="true"
+              android:foreground="?android:attr/selectableItemBackground"
+    android:background="?attr/containerBackgroundLight">
+
+
+    <TextView
+        android:id="@+id/item_rank_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:background="@drawable/bg_search_rank_01"
+        android:gravity="center"
+        style="@style/Theme.LyyGame.Text.Body.Large"/>
+
+    <TextView
+        android:id="@+id/item_content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="梦幻西游"
+        android:minLines="1"
+        style="@style/Theme.LyyGame.Text.Hint.Medium"/>
+
+</LinearLayout>

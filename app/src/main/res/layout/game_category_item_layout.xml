@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:orientation="horizontal"
+              android:paddingBottom="10dp"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:paddingTop="10dp">
+
+    <LinearLayout
+        android:id="@+id/game_item_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/game_item_pic_iv"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_game_pic_default_01"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/game_item_name_tv"
+                    style="@style/Theme.LyyGame.Text.Title.Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@id/game_item_pic_iv"
+                    android:ellipsize="end"
+                    android:maxWidth="170dp"
+                    android:singleLine="true"
+                    android:text="火影忍者"/>
+
+                <ImageView
+                    android:id="@+id/game_item_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="6dp"
+                    android:src="@drawable/ic_game_android"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatRatingBar
+                android:id="@+id/game_item_hot_rb"
+                style="@style/Widget.LyyGame.Rating.Hot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/game_item_name_tv"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/game_item_pic_iv"
+                android:rating="2.5"/>
+
+            <TextView
+                android:id="@+id/game_item_count_tv"
+                style="@style/Theme.LyyGame.Text.Option.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="13dp"
+                android:drawableLeft="@drawable/ic_game_item_count"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/ic_game_item_count"
+                android:gravity="center_vertical"
+                android:maxLines="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.hhly.lyygame.presentation.view.widget.DownloadProgressButton
+        android:id="@+id/game_item_opt_btn"
+        style="@style/Widget.LyyGame.Progress.Install.Small"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_gravity="center"
+        app:backgroud_color="@color/colorPrimary"
+        app:backgroud_second_color="#fff"
+        app:backgroud_strokeWidth="1dp"
+        app:radius="5"
+        app:text_color="@color/colorPrimary"
+        app:text_covercolor="#fff"/>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              style="@style/Theme.LyyGame.Menu.List.Me"
+    >
+
+    <ImageView
+        android:id="@+id/menu_item_iv"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_me_address"/>
+
+    <TextView
+        android:id="@+id/menu_item_name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="12dp"
+        android:text="收货地址"
+        style="@style/Theme.LyyGame.Text.Title.Medium"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_arrow_right_01"/>
+
+
+</LinearLayout>

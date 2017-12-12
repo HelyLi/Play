@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+        <include layout="@layout/widget_toolbar"/>
+
+        <RelativeLayout
+                android:id="@+id/process_img_bg"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="53dp"
+                android:background="@drawable/icon_pay_result_bg"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/process_img"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/icon_pay_result_process"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/time_tv"
+                    android:layout_width="wrap_content"
+                    android:textSize="20sp"
+                    android:text="5秒"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/color_05d30f"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:id="@+id/process_bg"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_marginTop="24dp"
+                      android:textSize="18sp"
+                      android:gravity="center"
+                      android:text="@string/lyy_game_pay_result_process_tv"
+                      android:textColor="@color/color_999999"
+                      android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_marginTop="24dp"
+                      android:textSize="16sp"
+                      android:gravity="center"
+                      android:text="@string/lyy_game_pay_result_process_tip"
+                      android:textColor="@color/color_ff0000"
+                      android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/failure_bg"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_marginTop="14dp"
+                      android:textSize="24sp"
+                      android:gravity="center"
+                      android:text="@string/lyy_game_pay_result_failure"
+                      android:textColor="@color/color_e7384a"
+                      android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/failure_cause_tv"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:text="@string/lyy_game_pay_result_failure_cause"
+                    android:textColor="@color/color_ff0000"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:id="@+id/success_bg"
+                      android:visibility="gone"
+                      android:layout_height="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                      android:textSize="@dimen/text_size_24"
+                      android:layout_gravity="center"
+                      android:layout_marginTop="15dp"
+                      android:textColor="@color/color_00e80b"
+                      android:text="@string/lyy_game_pay_result_success"
+                      android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:text="@string/lyy_game_pay_result_account"
+                          android:gravity="center"
+                          style="@style/Widget.LyyGame.Pay.Result"
+                          android:layout_height="match_parent"/>
+
+                <TextView
+                        android:id="@+id/account_tv"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        style="@style/Widget.LyyGame.Pay.Result"
+                        android:layout_height="match_parent"/>
+            </RelativeLayout>
+            <include layout="@layout/widget_divide"/>
+            <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                <TextView
+                        android:id="@+id/order_text_tv"
+                        android:layout_width="wrap_content"
+                          android:text="@string/lyy_game_pay_result_order_no"
+                          android:gravity="center"
+                          style="@style/Widget.LyyGame.Pay.Result"
+                          android:layout_height="match_parent"/>
+
+                <TextView
+                        android:id="@+id/order_no_tv"
+                        android:layout_width="wrap_content"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:layout_marginLeft="10dp"
+                        android:ellipsize="end"
+                        android:layout_toRightOf="@+id/order_text_tv"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        style="@style/Widget.LyyGame.Pay.Result"
+                        android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <include layout="@layout/widget_divide"/>
+            <RelativeLayout
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                <TextView android:layout_width="wrap_content"
+                          android:text="@string/lyy_game_pay_result_money"
+                          android:gravity="center"
+                          style="@style/Widget.LyyGame.Pay.Result"
+                          android:layout_height="match_parent"/>
+
+                <TextView
+                        android:id="@+id/total_money_tv"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:textSize="@dimen/text_size_18"
+                        android:textColor="@color/color_ee8600"
+                        android:layout_height="match_parent"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/btn_ll"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <Button
+                android:id="@+id/btn_left"
+                style="@style/Theme.LyyGame.Button.Large.Square"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/lyy_game_pay_result_contact_customer"/>
+        <Button
+                android:id="@+id/btn_right"
+                style="@style/Theme.LyyGame.Button.Large.Square"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/lyy_game_pay_result_continue_pay"/>
+    </LinearLayout>
+
+</LinearLayout>

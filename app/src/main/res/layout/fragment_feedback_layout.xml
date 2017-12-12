@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/containerBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/containerBackground"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="?attr/inputParentBackground">
+
+            <EditText
+                android:id="@+id/feedback_et"
+                style="@style/Widget.LyyGame.Register.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:background="?attr/inputParentBackground"
+                android:gravity="left"
+                android:maxLength="150"
+                android:inputType="textMultiLine"
+                android:hint="@string/lyy_feedback_hint"
+                android:padding="15dp"/>
+
+            <TextView
+                android:id="@+id/feedback_count_hint_tv"
+                style="@style/Theme.LyyGame.Text.Hint.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:text="0/150"/>
+
+        </FrameLayout>
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Option.12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/lyy_feedback_upload_pic_tip"/>
+
+        <LinearLayout
+            android:id="@+id/feedback_pic_root"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="?attr/containerBackgroundLight"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Option.12"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/lyy_feedback_contact_tip"/>
+
+        <EditText
+            android:id="@+id/feedback_contact_et"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?attr/inputParentBackground"
+            android:hint="手机号 / QQ号"
+            android:inputType="number"
+            android:numeric="integer"
+            android:maxLength="12"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/feedback_save_btn"
+            style="@style/Theme.LyyGame.Button.Medium.Red"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:enabled="false"
+            android:text="@string/lyy_edit_save"/>
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Option.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:lineSpacingExtra="9dp"
+            android:text="@string/lyy_feedback_contact_info"/>
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

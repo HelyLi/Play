@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/containerBackgroundLight"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:background="?attr/inputBackground"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/pwd_et"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:drawablePadding="14dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:hint="@string/lyy_account_hint_password"
+            android:inputType="textPassword"
+            />
+        
+        <ImageView
+            android:id="@+id/password_visibility_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/password_selector"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide_with_list_menu"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="20dp"
+        android:background="?attr/inputBackground"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/pwd_again_et"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/transparent"
+            android:drawablePadding="14dp"
+            android:gravity="center_vertical"
+            android:hint="@string/lyy_account_hint_password_again"
+            android:inputType="textPassword"
+            />
+
+        <ImageView
+            android:id="@+id/password_again_visibility_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/password_selector"/>
+
+    </LinearLayout>
+
+    <!--<com.hhly.lyygame.presentation.view.widget.PasswordEditText-->
+    <!--android:id="@+id/pwd_again_et"-->
+    <!--style="@style/Widget.LyyGame.Register.EditText"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:hint="@string/lyy_account_hint_password_again"-->
+    <!--android:inputType="textVisiblePassword"-->
+    <!--android:maxLines="1"-->
+    <!--android:paddingLeft="15dp"-->
+    <!--android:paddingRight="15dp"/>-->
+
+    <include layout="@layout/widget_divide_with_list_menu"/>
+
+    <LinearLayout
+        android:id="@+id/invite_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lyy_account_invite_code"/>
+
+        <EditText
+            android:id="@+id/invite_code_et"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/lyy_account_hint_invite_code"
+            android:inputType="textVisiblePassword"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/invite_divide"
+        layout="@layout/widget_divide_with_list_menu"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:text="@string/lyy_game_password_rules"/>
+
+    <Button
+        android:id="@+id/next_btn"
+        style="@style/Theme.LyyGame.Button.Large.Red"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="12dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/lyy_account_title_register"/>
+
+    <LinearLayout
+        android:id="@+id/account_agreement_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Option.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lyy_account_agreement_prefix"/>
+
+        <TextView
+            android:id="@+id/account_agreement"
+            style="@style/Theme.LyyGame.Text.Label.12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:paddingBottom="20dp"
+            android:text="@string/lyy_agreement_with_quotes"/>
+
+    </LinearLayout>
+
+</LinearLayout>

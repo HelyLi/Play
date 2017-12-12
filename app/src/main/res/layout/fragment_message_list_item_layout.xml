@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/item_layout"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:background="?attr/containerBackgroundLight"
+              android:clickable="true"
+              android:foreground="?android:attr/selectableItemBackground"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/rowBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/delete"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:background="@color/color_eb5757"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="?android:selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_delete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="@string/lyy_delete"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_fff"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/item_avatar_iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/item_avatar_iv"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_title_tv"
+                    style="@style/Theme.LyyGame.Notice.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="三国之老王驾到"/>
+
+                <TextView
+                    android:id="@+id/item_date_tv"
+                    style="@style/Theme.LyyGame.Text.Option.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="12分钟前"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_content_tv"
+                    style="@style/Theme.LyyGame.Notice.Hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="老王家注意避让，想死的过来爽YYkdkkdkfkakdkfkdkfkd"/>
+
+                <RelativeLayout
+                    android:id="@+id/item_state_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/bg_ring_red"/>
+
+                    <TextView
+                        android:id="@+id/item_unread_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/color_fff"
+                        android:textSize="@dimen/text_size_10"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

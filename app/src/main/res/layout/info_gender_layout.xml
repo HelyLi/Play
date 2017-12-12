@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="?attr/dialogBackground"
+              android:layout_width="295dp"
+              android:layout_gravity="center"
+              android:paddingBottom="12dp"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Theme.LyyGame.Text.Title.Large"
+            android:layout_centerInParent="true"
+            android:text="@string/lyy_select_gender"/>
+
+        <ImageView
+            android:id="@+id/close_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_info_dialog_close"
+            android:layout_marginRight="15dp"/>
+
+
+    </RelativeLayout>
+
+    <include layout="@layout/widget_divide" />
+
+    <RadioGroup
+            android:id="@+id/gender_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="36dp">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/gender_male_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="@style/Theme.LyyGame.Text.Title.Small"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/ic_male_selector"
+            android:text="@string/lyy_gender_male"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/gender_female_rb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center_horizontal"
+            style="@style/Theme.LyyGame.Text.Title.Small"
+            android:button="@null"
+            android:background="@null"
+            android:drawablePadding="6dp"
+            android:drawableTop="@drawable/ic_female_selector"
+            android:gravity="center"
+            android:text="@string/lyy_gender_female"/>
+
+
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/lyy_confirm"
+        style="@style/Theme.LyyGame.Button.Medium.Red"/>
+
+
+
+</LinearLayout>

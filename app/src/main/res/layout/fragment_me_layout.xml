@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hhly.lyygame.presentation.view.widget.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:background="?attr/containerBackground"
+                      android:fitsSystemWindows="true"
+                      android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/containerBackground"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_me_header"/>
+
+                <RelativeLayout
+                    android:id="@+id/base_info_root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="62dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatar_iv"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_game_pic_default_01"
+                        android:visibility="invisible"
+                        app:civ_border_color="#ffffffff"
+                        app:civ_border_width="2dp"/>
+
+                    <TextView
+                        android:id="@+id/nickname_tv"
+                        style="@style/Theme.LyyGame.Text.Body.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/avatar_iv"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="五星级酒店经理"
+                        android:visibility="invisible"/>
+
+                    <TextView
+                        android:id="@+id/not_login_tip_tv"
+                        style="@style/Theme.LyyGame.Text.Body.Large.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:text="@string/lyy_not_login_tip"/>
+
+                </RelativeLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_below="@id/base_info_root"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="27dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="2dp"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Theme.LyyGame.Text.Title.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/lyy_me_coins"/>
+
+                            <TextView
+                                android:id="@+id/coins_tv"
+                                style="@style/Theme.LyyGame.Text.Label.Medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:ellipsize="marquee"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:text="0"/>
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/coins_btn"-->
+                                <!--style="@style/Theme.LyyGame.Game.Description"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginRight="15dp"-->
+                                <!--android:gravity="center"-->
+                                <!--android:paddingLeft="3dp"-->
+                                <!--android:paddingRight="3dp"-->
+                                <!--android:text="@string/lyy_me_recharge"/>-->
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_e9e9e9"/>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Theme.LyyGame.Text.Title.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/lyy_me_coupon"/>
+
+                            <TextView
+                                android:id="@+id/coupon_tv"
+                                style="@style/Theme.LyyGame.Text.Label.Medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:ellipsize="marquee"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:text="0"/>
+
+                            <!--<TextView-->
+                            <!--android:id="@+id/score_btn"-->
+                            <!--style="@style/Theme.LyyGame.Game.Description"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_marginRight="15dp"-->
+                            <!--android:gravity="center"-->
+                            <!--android:paddingLeft="3dp"-->
+                            <!--android:paddingRight="3dp"-->
+                            <!--android:text="@string/lyy_me_get_coin_tip"/>-->
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/color_e9e9e9"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/Theme.LyyGame.Text.Title.Medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center_vertical"
+                                android:text="@string/lyy_me_score"/>
+
+                            <TextView
+                                android:id="@+id/score_tv"
+                                style="@style/Theme.LyyGame.Text.Label.Medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:ellipsize="marquee"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:text="0"/>
+
+                            <!--<TextView-->
+                                <!--android:id="@+id/score_btn"-->
+                                <!--style="@style/Theme.LyyGame.Game.Description"-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginRight="15dp"-->
+                                <!--android:gravity="center"-->
+                                <!--android:paddingLeft="3dp"-->
+                                <!--android:paddingRight="3dp"-->
+                                <!--android:text="@string/lyy_me_get_coin_tip"/>-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+
+            <Button
+                android:id="@+id/exit_btn"
+                style="@style/Theme.LyyGame.Button.Large.Red"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/lyy_exit_account"/>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/sign_in_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="80dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:src="@drawable/sign_in_selector"/>
+</com.hhly.lyygame.presentation.view.widget.DragLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:background="?android:attr/selectableItemBackground"
+              android:clickable="true"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp"
+              android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Theme.LyyGame.Text.Title.Large"
+        android:text="账号"/>
+
+    <TextView
+        android:id="@+id/item_content_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        style="@style/Theme.LyyGame.Text.Option.Medium"
+        android:text="lllieiwp3939"
+        android:gravity="right|center_vertical"/>
+
+    <ImageView
+        android:id="@+id/item_arrow_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:src="@drawable/ic_arrow_right_01"/>
+
+
+
+</LinearLayout>

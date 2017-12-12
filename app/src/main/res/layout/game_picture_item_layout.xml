@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hhly.lyygame.presentation.view.widget.RatioImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_pic_iv"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    app:ratio_width_percent="1.5"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_game_detail_pic_default">
+
+</com.hhly.lyygame.presentation.view.widget.RatioImageView>

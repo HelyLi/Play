@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_fade_out.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_fade_out.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_grow_fade_in_from_bottom.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_slide_in_top.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_slide_in_top.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_slide_out_top.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_slide_out_bottom.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_slide_in_bottom.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_fade_in.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_fade_in.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_shrink_fade_out_from_bottom.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_popup_exit.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_popup_exit.xml"
+    },
+    {
+        "merged": "/Users/hely.lixiong/Downloads/WYX1.1/rxdownload2/build/intermediates/res/merged/debug/anim/abc_popup_enter.xml",
+        "source": "/Users/hely.lixiong/.android/build-cache/18cf2e8e739169bee75cd80c8f03702ea43294d6/output/res/anim/abc_popup_enter.xml"
+    }
+]

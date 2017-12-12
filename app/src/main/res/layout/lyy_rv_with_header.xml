@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <com.hhly.lyygame.presentation.view.widget.SectionHeader
+        android:id="@+id/sectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:sectionMore="true"
+        app:sectionIcon="@drawable/ic_section_hot"
+        app:sectionTitle="@string/lyy_section_hot"/>
+
+    <include layout="@layout/widget_divide"/>
+
+    <com.hhly.lyygame.presentation.view.widget.NoScrollRecycleView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_fff"/>
+
+</LinearLayout>

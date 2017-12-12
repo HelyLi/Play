@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/dialog_bg_round"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            style="@style/Theme.LyyGame.Text.Title.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/lyy_pay_hint_message"/>
+
+        <ImageView
+            android:id="@+id/cancel_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg_download_delete"/>
+    </RelativeLayout>
+
+    <include layout="@layout/widget_divide"/>
+
+    <TextView
+        style="@style/Theme.LyyGame.Text.Hint.14"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="@string/lyy_pay_hint_error_message"/>
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_red_round"
+        android:gravity="center"
+        android:text="@string/lyy_confirm"
+        android:textColor="@color/color_fff"/>
+</LinearLayout>

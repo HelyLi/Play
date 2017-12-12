@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/containerBackgroundLight"
+              android:orientation="vertical">
+
+    <include layout="@layout/widget_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/name_et"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:maxLength="8"
+            android:gravity="center_vertical"
+            android:hint="@string/lyy_address_hint_name"
+            android:inputType="text"/>
+
+        <ImageView
+            android:id="@+id/name_clear_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide_inset"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/phone_et"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:maxLength="11"
+            android:hint="@string/lyy_address_hint_phone"
+            android:inputType="phone"/>
+
+        <ImageView
+            android:id="@+id/phone_clear_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide_inset"/>
+
+        <Button
+            android:id="@+id/street_tv"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/lyy_address_hint_street"
+            android:hint="@string/lyy_address_hint_street"
+            android:focusableInTouchMode="false"
+            android:drawableRight="@drawable/ic_arrow_right_01"
+            />
+
+    <include layout="@layout/widget_divide_inset"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/detail_et"
+            style="@style/Widget.LyyGame.Register.EditText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="4dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:maxLength="100"
+            android:hint="@string/lyy_address_hint_detail"
+            android:inputType="textMultiLine"/>
+
+        <ImageView
+            android:id="@+id/detail_clear_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide_inset"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:gravity="center_vertical">
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/address_default_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lyy_address_default_for_save"
+        style="@style/Widget.LyyGame.Address.CheckBox"
+        />
+
+    </LinearLayout>
+
+    <include layout="@layout/widget_divide_inset"/>
+
+    <Button
+        android:id="@+id/save_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/lyy_edit_save"
+        style="@style/Theme.LyyGame.Button.Round.Red"/>
+
+
+</LinearLayout>

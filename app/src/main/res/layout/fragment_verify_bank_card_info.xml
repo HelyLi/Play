@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <include layout="@layout/widget_toolbar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/verify_info_btn"
+        android:layout_below="@+id/toolBar"
+        android:descendantFocusability="beforeDescendants"
+        android:fastScrollEnabled="false">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/verify_info_btn"
+        style="@style/Theme.LyyGame.Button.Large.Square"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/lyy_pay_verify_info"/>
+
+</RelativeLayout>

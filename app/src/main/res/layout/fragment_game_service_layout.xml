@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:id="@+id/segment_group"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:sc_border_width="1dp"
+        app:sc_checked_text_color="@color/color_fff"
+        app:sc_corner_radius="5dp"
+        app:sc_tint_color="@color/color_e7384a">
+
+        <RadioButton
+            android:id="@+id/service_new"
+            style="@style/Widget.LyyGame.Game.Segment.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/lyy_game_service_new_hint"/>
+
+        <RadioButton
+            android:id="@+id/service_future"
+            style="@style/Widget.LyyGame.Game.Segment.RadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lyy_game_service_future_hit"/>
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/color_f5f5f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lyy_game_name"
+            android:textColor="@color/color_1c1c1c"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lyy_game_state"
+            android:textColor="@color/color_1c1c1c"
+            android:textSize="10dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/lyy_game_time"
+            android:textColor="@color/color_1c1c1c"
+            android:textSize="10dp"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_recyclerview_with_refresh"></include>
+
+</LinearLayout>

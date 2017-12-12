@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:background="?android:attr/selectableItemBackground"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+
+    <ImageView
+        android:id="@+id/game_item_pic_iv"
+        android:layout_width="128.4dp"
+        android:layout_height="70dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_game_pic_default_03"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/game_item_pic_iv">
+
+    <TextView
+        android:id="@+id/game_item_name_tv"
+        style="@style/Theme.LyyGame.Text.Title.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:text="主公救我"/>
+
+    <TextView
+        android:id="@+id/game_item_label_tv"
+        style="@style/Theme.LyyGame.Text.Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_item_name_tv"
+        android:layout_marginEnd="9dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="6dp"
+        android:maxLines="1"
+        android:text="角色扮演"/>
+
+    <TextView
+        android:id="@+id/game_item_count_tv"
+        style="@style/Theme.LyyGame.Text.Option.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/game_item_label_tv"
+        android:layout_toRightOf="@id/game_item_label_tv"
+        android:drawableLeft="@drawable/ic_game_item_count"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_game_item_count"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="2388人玩过"/>
+
+    <TextView
+        android:id="@+id/game_item_support_tv"
+        style="@style/Theme.LyyGame.Text.Option.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_item_label_tv"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="适合设备：iPhone iPad 安卓"/>
+
+    </RelativeLayout>
+
+
+    <com.hhly.lyygame.presentation.view.widget.ProgressButton
+        android:id="@+id/game_item_opt_btn"
+        style="@style/Widget.LyyGame.Progress.Install.Small"
+        android:layout_width="52dp"
+        android:layout_height="27dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:pbText="@string/lyy_btn_state_install"/>
+
+
+
+
+</RelativeLayout>

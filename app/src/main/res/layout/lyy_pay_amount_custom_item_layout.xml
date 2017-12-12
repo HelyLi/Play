@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<EditText
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pay_other_amount_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="7.5dp"
+    android:background="@drawable/pay_amount_selector"
+    android:cursorVisible="false"
+    android:gravity="center"
+    android:hint="@string/lyy_pay_other_amount"
+    android:inputType="number"
+    android:maxLength="8"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    android:textColor="@color/color_e7384b"
+    android:textColorHint="@color/color_999999"
+    android:textSize="@dimen/sp_14"/>
+

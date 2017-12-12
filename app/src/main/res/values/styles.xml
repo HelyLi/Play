@@ -1,0 +1,586 @@
+<resources >
+
+    <!-- Disable RTL support on older devices -->
+    <!-- Prevents crash on certain devices to namespace conflict -->
+    <style name="FrameworkRoot.Theme" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="FrameworkRoot.Widget" parent="Theme.AppCompat.NoActionBar" />
+
+    <!-- Base application theme. -->
+    <style name="Theme" parent="FrameworkRoot.Theme">
+        <!-- Customize your theme here. -->
+        <!-- Only needed for pre-L -->
+        <item name="android:editTextStyle">@style/Widget.LyyGame.EditText</item>
+
+    </style>
+
+    <style name="Theme.LyyGame.Base" parent="Theme">
+
+        <item name="popupItemBackground">?android:selectableItemBackground</item>
+        <item name="photoItemForeground">?android:selectableItemBackground</item>
+        <item name="photoItemForegroundBorderless">?android:selectableItemBackground</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="imageItemBackground">?android:selectableItemBackground</item>
+        <item name="android:borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+
+        <item name="title_bar_height">@dimen/toolbar_height</item>
+        <item name="actionMenuTextAppearance">@style/Theme.LyyGame.Toolbar.Menu</item>
+        <item name="toolbarBackground">@color/color_e7384a</item>
+        <item name="divideBackground">@color/color_e9e9e9</item>
+        <item name="divideInsetBackground">@drawable/inset_divide</item>
+        <item name="tabBarBackground">@color/color_fff</item>
+        <item name="containerBackground">@color/color_f5f5f5</item>
+        <item name="containerBackgroundLight">@color/color_fff</item>
+        <item name="listMenuItemDivide">@drawable/list_menu_item_divide</item>
+        <item name="listMenuItemDivideHeight">@dimen/list_menu_item_divide_height</item>
+        <item name="listMenuGroupDivideHeight">@dimen/list_menu_group_divide_height</item>
+        <item name="listMenuGroupDivide">@drawable/list_menu_group_divide</item>
+        <item name="infoItemDivide">@color/color_e9e9e9</item>
+        <item name="infoItemDivideHeight">@dimen/info_item_divide_height</item>
+        <item name="infoGroupDivideHeight">@dimen/info_group_divide_height</item>
+        <item name="infoGroupDivide">@color/color_e9e9e9</item>
+        <item name="listMenuItemInsetDivide">@color/color_fff</item>
+        <item name="inputBackground">@drawable/bg_input_white</item>
+        <item name="inputParentBackground">@color/color_fff</item>
+        <item name="dialogBackground">@drawable/dialog_bg_round</item>
+        <item name="addressItemBackground">@color/color_f5f5f5</item>
+
+    </style>
+
+    <style name="Theme.LyyGame" parent="Theme.LyyGame.Base" />
+
+    <style name="Theme.LyyGame.Splash.Base" parent="Theme.LyyGame">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/ic_start_logo</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.LyyGame.Splash" parent="Theme.LyyGame.Splash.Base" />
+
+    <style name="Theme.LyyGame.Light" parent="Theme.LyyGame.Base" />
+
+    <style name="Theme.LyyGame.Transparent" parent="Theme.LyyGame.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.LyyGame.Toolbar.Menu" parent="@style/TextAppearance.AppCompat.Menu">
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+    </style>
+
+    <style name="Widget.LyyGame.EditText" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColorHint">@color/color_fff</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="Theme.LyyGame.ToolbarWhite" parent="Widget.AppCompat.Toolbar">
+        <item name="actionMenuTextColor">@color/color_fff</item>
+        <item name="actionMenuTextAppearance">@style/Theme.LyyGame.Toolbar.TextAppearance</item>
+    </style>
+
+    <style name="Theme.LyyGame.Toolbar.TextAppearance" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+    
+    <style name="Theme.LyyGame.Text.Title.Smaller" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+    
+    <style name="Theme.LyyGame.Text.Title.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Body.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_fff</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Body.Medium" parent="TextAppearance.AppCompat">
+    <item name="android:textSize">@dimen/text_size_12</item>
+    <item name="android:textColor">@color/color_fff</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Body.Large" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_fff</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Body.15" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/color_fff</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Body.Large.Bold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Label" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Error" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_ff0000</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Label.12" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Label.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Label.Large" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Title.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Title.Large" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+    <style name="Theme.LyyGame.Task.Title.Large.Bold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LyyGame.Task.Score.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LyyGame.Task.Score.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LyyGame.Task.Title.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_fff</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Option.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Option.9" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_9</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Option.12" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Option.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Option.14" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Hint.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_5b5b5b</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Hint.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_5b5b5b</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Hint.Medium.TabLayout" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_5b5b5b</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Hint.14" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_5b5b5b</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Small.Red" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_small_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Medium.Red" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_small_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Small.Yellow" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_small_02_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Large.Red" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_large_round_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Litter.Red" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_litter_round_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Transparent" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Large.Square" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_square_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Medium.Square" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_square_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Button.Round.Red" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_small_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Menu.List.Me" parent="@style/Theme.AppCompat">
+        <item name="android:background">@color/color_fff</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Widget.LyyGame.Rating.Hot" parent="@style/Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/game_hot_rating_bg</item>
+        <item name="android:minHeight">12dp</item>
+        <item name="android:maxHeight">12dp</item>
+        <item name="android:stepSize">0.5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="Widget.LyyGame.Info.EditText" parent="@style/Widget.LyyGame.EditText">
+        <item name="android:textColor">@color/color_1c1c1c</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColorHint">@color/color_b4b4b4</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="Widget.LyyGame.Register.EditText" parent="@style/Widget.LyyGame.EditText">
+        <item name="android:textColor">@color/color_1c1c1c</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColorHint">@color/color_b4b4b4</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="Widget.LyyGame.CheckBox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/ic_cb_check_selector</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="Widget.LyyGame.Address.CheckBox" parent="@style/Widget.LyyGame.CheckBox">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+        <item name="android:paddingLeft">6dp</item>
+    </style>
+
+    <style name="Widget.LyyGame.Address.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_selector_with_stroke</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">32dp</item>
+    </style>
+
+    <style name="Widget.LyyGame.Task.Item.Button" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">52dp</item>
+        <item name="android:layout_height">27dp</item>
+    </style>
+
+    <style name="Theme.LyyGame.Exchange.Text.Name" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+    <style name="Theme.LyyGame.Exchange.Text.Count" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+    </style>
+
+    <style name="Theme.LyyGame.Exchange.Text.Score" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_ffb212</item>
+    </style>
+
+    <style name="Theme.LyyGame.Text.Date" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Widget.LyyGame.Score.TabLayout.Text" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Theme.LyyGame.Record.Score.Medium" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LyyGame.Record.Score.Small" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LyyGame.Me.Exit" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_666666</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.LyyGame.Gift.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+    <style name="Theme.LyyGame.Gift.Score" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+    </style>
+
+    <style name="Theme.LyyGame.Gift.Price" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_11</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Widget.LyyGame.Order.CheckBox" parent="@style/Widget.LyyGame.CheckBox">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+        <item name="android:paddingLeft">4dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+
+    <style name="Theme.LyyGame.Game.Name" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/color_fff</item>
+    </style>
+
+    <style name="Theme.LyyGame.Game.Description" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_fff</item>
+    </style>
+
+    <style name="Theme.LyyGame.Notice.Title" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+    <style name="Theme.LyyGame.Notice.SubTitle" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_5b5b5b</item>
+    </style>
+
+    <style name="Theme.LyyGame.Notice.Hint" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Theme.LyyGame.Transfer" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+    <style name="Theme.LyyGame.Transfer.Hint" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/color_999999</item>
+    </style>
+
+    <style name="Theme.LyyGame.Transfer.Hint2" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/color_b4b4b4</item>
+    </style>
+
+    <style name="Theme.LyyGame.Download.Name" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/color_1c1c1c</item>
+    </style>
+
+
+    <style name="Widget.LyyGame.Game.Segment.RadioButton" parent="Theme.LyyGame.Base">
+        <item name="android:textColor">@drawable/button_text_color</item>
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:minHeight">42dp</item>
+        <item name="android:minWidth">74dp</item>
+        <item name="android:maxWidth">74dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="Widget.LyyGame.Button.SignIn" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/color_fff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button_sign_in_selector</item>
+    </style>
+
+    <style name="Theme.LyyGame.Dialog.Fullscreen" parent="Theme.LyyGame.Base">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowSoftInputMode">adjustResize|stateHidden</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/MenuPushFromBottomAnim</item>
+    </style>
+
+    <style name="MenuPushFromBottomAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/menu_select_avatar_in</item>
+        <item name="android:windowExitAnimation">@anim/menu_select_avatar_out</item>
+    </style>
+
+    <style name="Theme.LyyGame.Dialog.Exchange.Result" parent="Theme.LyyGame.Base">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <style name="Widget.LyyGame.Calendar.Week" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_e7384a</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Widget.LyyGame.Calendar.Day" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/calendar_text_color</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Widget.LyyGame.Progress.Install" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/bg_progress_button</item>
+        <item name="pbStartTextColor">@color/color_fff</item>
+        <item name="pbProgressTextColor">@color/color_1c1c1c</item>
+        <item name="pbFinishTextColor">@color/color_fff</item>
+        <item name="pbUninstallTextColor">@color/color_1c1c1c</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">100</item>
+    </style>
+
+    <style name="Widget.LyyGame.Progress.Install.Small" parent="Widget.LyyGame.Progress.Install">
+        <item name="android:minHeight">27dp</item>
+        <item name="android:maxHeight">27dp</item>
+        <item name="android:minWidth">54dp</item>
+        <item name="android:maxWidth">54dp</item>
+        <item name="pbTextSize">@dimen/text_size_12</item>
+    </style>
+
+    <style name="Widget.LyyGame.Progress.Install.Large" parent="Widget.LyyGame.Progress.Install">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxHeight">50dp</item>
+        <item name="pbTextSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Widget.LyyGame.Button.Exchange.Confirm.Succeed" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/color_e7384a</item>
+        <item name="android:background">@drawable/button_exchange_dialog_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Widget.LyyGame.Button.Exchange.Confirm.Failure" parent="@style/Widget.AppCompat.Button">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/color_ffa508</item>
+        <item name="android:background">@drawable/button_exchange_dialog_selector</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="AreaDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="Widget.LyyGame.Pay.Result" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_1c1c1c</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:background="?attr/containerBackgroundLight"
+              android:clickable="true"
+              android:paddingLeft="15dp"
+              android:paddingRight="15dp">
+              <!--android:foreground="?android:attr/selectableItemBackground"-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:paddingRight="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name_tv"
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="每日签到"/>
+
+        <TextView
+            android:id="@+id/date_tv"
+            style="@style/Theme.LyyGame.Text.Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:maxLines="1"
+            android:text="2016-11-30"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/score_symbol_tv"
+        style="@style/Theme.LyyGame.Record.Score.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/score_tv"
+        android:layout_gravity="center_vertical"
+        android:layout_toLeftOf="@id/score_tv"
+        android:text="+"/>
+
+    <TextView
+        android:id="@+id/score_tv"
+        style="@style/Theme.LyyGame.Record.Score.Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:text="2340"/>
+
+</LinearLayout>

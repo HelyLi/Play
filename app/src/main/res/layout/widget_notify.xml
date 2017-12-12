@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tab_notify_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="13dp"
+    android:textColor="@color/color_fff"
+    android:textSize="@dimen/tab_notify_text_size"
+    android:maxLines="1"
+    android:gravity="center"
+    android:padding="1dp"
+    android:visibility="gone"
+    android:background="@drawable/notify_background"
+    android:layout_marginTop="@dimen/tab_notify_margin_top"
+    android:layout_marginRight="@dimen/tab_notify_margin_right"
+    android:layout_marginEnd="@dimen/tab_notify_margin_right"
+    android:text="1"
+    android:layout_alignRight="@id/tab_icon"
+    android:layout_alignEnd="@id/tab_icon"
+    tools:showIn="@layout/main_tab_item"/>

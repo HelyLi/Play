@@ -1,0 +1,45 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVer
+    buildToolsVersion rootProject.ext.buildToolsVer
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVer
+        targetSdkVersion rootProject.ext.targetSdkVer
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile "com.android.support:appcompat-v7:${rootProject.ext.supportLibVer}"
+    testCompile 'junit:junit:4.12'
+    //retrofit
+    compile "com.squareup.retrofit2:retrofit:${rootProject.ext.retrofitVer}"
+    compile "com.squareup.retrofit2:converter-gson:${rootProject.ext.retrofitVer}"
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+
+    compile "com.squareup.okhttp3:okhttp:${rootProject.ext.okHttpVer}"
+    compile "com.squareup.okhttp3:logging-interceptor:${rootProject.ext.okHttpVer}"
+
+    //rxJava
+    compile "io.reactivex.rxjava2:rxjava:${rootProject.ext.rxJavaVer}"
+    compile "io.reactivex.rxjava2:rxandroid:${rootProject.ext.rxAndroidVer}"
+}
+
+//apply from: "bintray.gradle"

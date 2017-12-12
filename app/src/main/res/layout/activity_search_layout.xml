@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        android:minHeight="?attr/title_bar_height"
+        android:background="?attr/toolbarBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/search_container"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_container_background"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/toolbar_title_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:hint="@string/lyy_search_hint"
+                android:background="@color/transparent"
+                style="@style/Theme.LyyGame.Text.Hint.Medium"/>
+
+            <ImageView
+                android:id="@+id/clear_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"/>
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/cancel_btn"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="@string/lyy_cancel"
+                style="@style/Theme.LyyGame.Button.Transparent"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

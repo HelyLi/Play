@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="?attr/addressItemBackground">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Theme.LyyGame.Text.Title.Medium"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="12dp"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/phone_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Theme.LyyGame.Text.Title.Small"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="12dp"
+        android:maxLines="1"
+        android:layout_alignBaseline="@id/name_tv"/>
+
+    <TextView
+        android:id="@+id/detail_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_tv"
+        android:layout_alignLeft="@id/name_tv"
+        android:layout_alignRight="@id/phone_tv"
+        android:layout_marginTop="12dp"
+        style="@style/Theme.LyyGame.Text.Title.Smaller"/>
+
+    <View
+        android:id="@+id/detail_divide"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/address_dash"
+        android:layerType="software"
+        android:layout_below="@id/detail_tv"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/detail_divide">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/address_default_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            style="@style/Widget.LyyGame.Address.CheckBox"
+            android:text="@string/lyy_address_default_for_setting"/>
+
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/lyy_delete"
+            android:layout_marginRight="15dp"
+            style="@style/Widget.LyyGame.Address.Button"/>
+
+        <Button
+            android:id="@+id/edit_btn"
+            android:layout_toLeftOf="@id/delete_btn"
+            android:layout_centerVertical="true"
+            android:text="@string/lyy_edit"
+            android:layout_marginRight="15dp"
+            style="@style/Widget.LyyGame.Address.Button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

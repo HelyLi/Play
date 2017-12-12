@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="?attr/containerBackground"
+              android:orientation="vertical">
+
+    <include layout="@layout/widget_toolbar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?attr/containerBackground"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/containerBackgroundLight"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/select_all_cb"
+            style="@style/Widget.LyyGame.Address.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginLeft="15dp"
+            android:text="@string/lyy_select_all"/>
+
+        <TextView
+            android:id="@+id/price_tv"
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1.0"
+            android:text="@string/lyy_favourite_total"/>
+
+        <Button
+            android:id="@+id/balance_btn"
+            style="@style/Theme.LyyGame.Button.Medium.Square"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:text="@string/lyy_balance"/>
+
+    </LinearLayout>
+
+</LinearLayout>

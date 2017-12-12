@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseTheme">
+        <attr name="actionBarIconColor" format="color" />
+        <attr name="actionBarInsetStart" format="dimension" />
+        <attr name="spinnerBarInsetStart" format="dimension" />
+        <attr name="popupItemBackground" format="reference" />
+        <attr name="photoItemForeground" format="reference" />
+        <attr name="photoItemForegroundBorderless" format="reference" />
+        <attr name="imageItemBackground" format="reference"/>
+        <attr name="toolbarBackground" format="reference" />
+        <attr name="divideBackground" format="reference" />
+        <attr name="divideInsetBackground" format="reference" />
+        <attr name="tabBarBackground" format="reference" />
+        <attr name="containerBackground" format="reference" />
+        <attr name="containerBackgroundLight" format="reference" />
+        <attr name="listMenuItemDivide" format="reference"/>
+        <attr name="listMenuItemDivideHeight" format="reference"/>
+        <attr name="listMenuGroupDivide" format="reference"/>
+        <attr name="listMenuGroupDivideHeight" format="reference"/>
+        <attr name="infoItemDivide" format="reference"/>
+        <attr name="infoItemDivideHeight" format="reference"/>
+        <attr name="infoGroupDivide" format="reference"/>
+        <attr name="infoGroupDivideHeight" format="reference"/>
+        <attr name="listMenuItemInsetDivide" format="reference"/>
+        <attr name="dialogBackground" format="reference" />
+        <attr name="inputBackground" format="reference" />
+        <attr name="inputParentBackground" format="reference" />
+        <attr name="addressItemBackground" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RatioLayout">
+        <attr name="ratio_width_percent" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ListMenuItem">
+        <attr name="menuIcon" format="reference"/>
+        <attr name="menuTitle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SectionHeader">
+        <attr name="sectionIcon" format="reference"/>
+        <attr name="sectionTitle" format="reference" />
+        <attr name="sectionMore" format="boolean" />
+    </declare-styleable>
+
+    <attr name="title_bar_height" format="dimension"/>
+
+    <declare-styleable name="ProgressButton">
+        <attr name="pbTextSize" format="reference"/>
+        <attr name="pbText" format="reference"/>
+        <attr name="pbStartTextColor" format="reference" />
+        <attr name="pbProgressTextColor" format="reference" />
+        <attr name="pbFinishTextColor" format="reference" />
+        <attr name="pbUninstallTextColor" format="reference" />
+        <attr name="pbStateTexts" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer"/>
+        <attr name="pet_iconHide" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="WheelView">
+        <attr name="unitHeight" format="dimension" />
+        <attr name="itemNumber" format="integer"/>
+
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="selectedTextSize" format="dimension" />
+
+        <attr name="lineColor" format="color" />
+        <attr name="lineHeight" format="dimension" />
+
+        <attr name="maskHeight" format="dimension"/>
+        <attr name="noEmpty" format="boolean"/>
+        <attr name="isEnable" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="flow" format="boolean"/>
+        <attr name="childSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="childSpacingForLastRow" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+            <enum name="align" value="-65537"/>
+        </attr>
+        <attr name="rowSpacing" format="enum|dimension">
+            <enum name="auto" value="-65536"/>
+        </attr>
+        <attr name="rtl" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="DownloadProgressButton">
+        <attr name="radius" format="float"/>
+        <attr name="backgroud_color" format="color"/>
+        <attr name="backgroud_second_color" format="color"/>
+        <attr name="text_color" format="color"/>
+        <attr name="text_covercolor" format="color"/>
+        <attr name="backgroud_strokeWidth" format="dimension"/>
+        <attr name="text_normal" format="string"/>
+        <attr name="text_downing" format="string"/>
+        <attr name="text_pause" format="string"/>
+        <attr name="text_finish" format="string"/>
+        <attr name="animation_duration" format="integer"/>
+    </declare-styleable>
+
+
+    <!-- SimpleButton，简写sb -->
+    <declare-styleable name="SimpleButton">
+        <attr name="sb_mode" format="enum">
+            <enum name="normal" value="201"/>
+            <enum name="check" value="202"/>
+            <enum name="icon_check_invisible" value="203"/>
+            <enum name="icon_check_change" value="204"/>
+        </attr>
+        <attr name="sb_shape" format="enum">
+            <enum name="round_rect" value="101"/>
+            <enum name="arc" value="102"/>
+            <enum name="rect" value="103"/>
+        </attr>
+        <!-- 3、5 是Gravity里定义的值 -->
+        <attr name="sb_gravity" format="enum">
+            <enum name="left" value="3"/>
+            <enum name="right" value="5"/>
+        </attr>
+        <attr name="sb_auto_check" format="boolean"/>
+        <attr name="sb_checked" format="boolean"/>
+        <attr name="sb_bg_color" format="color"/>
+        <attr name="sb_border_color" format="color"/>
+        <attr name="sb_text_color" format="color"/>
+        <attr name="sb_bg_color_check" format="color"/>
+        <attr name="sb_border_color_check" format="color"/>
+        <attr name="sb_text_color_check" format="color"/>
+        <attr name="sb_text" format="string"/>
+        <attr name="sb_text_check" format="string"/>
+        <attr name="sb_text_size" format="dimension"/>
+        <attr name="sb_border_width" format="dimension"/>
+        <attr name="sb_border_radius" format="dimension"/>
+        <attr name="sb_vertical_padding" format="dimension"/>
+        <attr name="sb_horizontal_padding" format="dimension"/>
+        <attr name="sb_icon_padding" format="dimension"/>
+        <attr name="sb_icon" format="reference"/>
+        <attr name="sb_icon_change" format="reference"/>
+    </declare-styleable>
+
+</resources>

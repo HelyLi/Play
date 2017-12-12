@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@color/color_f5f5f5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/fragment_virtual_order_item_layout" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/pay_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/pay_sure_btn"
+                android:layout_alignParentTop="true"
+                android:background="@color/color_fff" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_f5f5f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/price_tv"
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:gravity="right|center_vertical"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="@style/Theme.LyyGame.Button.Large.Square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="true"
+            android:text="@string/lyy_pay_sure" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="?attr/containerBackgroundLight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/fragment_order_item_layout"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        style="@style/Theme.LyyGame.Text.Option.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lyy_order_phone_hint"/>
+
+                    <EditText
+                        android:id="@+id/order_phone_et"
+                        style="@style/Theme.LyyGame.Text.Title.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/transparent"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        />
+
+                </LinearLayout>
+
+                <include layout="@layout/widget_divide"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        style="@style/Theme.LyyGame.Text.Option.14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/lyy_order_phone_hint_02"/>
+
+                    <EditText
+                        android:id="@+id/order_phone_again_et"
+                        style="@style/Theme.LyyGame.Text.Title.Medium"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.0"
+                        android:background="@color/transparent"
+                        android:inputType="phone"
+                        android:maxLines="1"
+                        />
+
+                </LinearLayout>
+
+                <include layout="@layout/widget_divide"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <TextView
+                    android:id="@+id/order_price_tv"
+                    style="@style/Theme.LyyGame.Text.Title.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:gravity="right|center_vertical"/>
+
+                <include layout="@layout/widget_divide"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    style="@style/Theme.LyyGame.Text.Title.Medium"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:maxLines="1"
+                    android:text="@string/lyy_game_virtual_shop_prompt"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/order_agreement_cb"
+                        style="@style/Widget.LyyGame.Order.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:checked="false"
+                        android:text="@string/lyy_agree"/>
+
+                    <TextView
+                        android:id="@+id/order_agreement_tv"
+                        style="@style/Theme.LyyGame.Text.Label.12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/lyy_exchange_agreement_title"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/color_f5f5f5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/price_tv"
+            style="@style/Theme.LyyGame.Text.Title.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:gravity="right|center_vertical"/>
+
+        <Button
+            android:id="@+id/confirm_btn"
+            style="@style/Theme.LyyGame.Button.Large.Square"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:text="@string/lyy_confirm_order"/>
+
+    </LinearLayout>
+
+</LinearLayout>
